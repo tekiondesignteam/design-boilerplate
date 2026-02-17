@@ -28,8 +28,8 @@ function processHtml(slug) {
     const headMatch = htmlContent.match(/<head[^>]*>([\s\S]*)<\/head>/i);
     let headContent = headMatch ? headMatch[1] : '';
 
-    // Fix relative paths in headContent: ../assets/ -> /assets/
-    headContent = headContent.replace(/\.\.\/assets\//g, '/assets/');
+    // Fix relative paths in headContent: ../assets/ -> /design-boilerplate/assets/
+    headContent = headContent.replace(/\.\.\/assets\//g, '/design-boilerplate/assets/');
 
     // Normalize styles
     headContent = headContent.replace(/body\s*{[\s\S]*?}/gi, '');
@@ -90,7 +90,7 @@ function processHtml(slug) {
     let bodyContent = bodyMatch ? bodyMatch[1] : htmlContent;
 
     // Fix relative paths in bodyContent
-    bodyContent = bodyContent.replace(/\.\.\/assets\//g, '/assets/');
+    bodyContent = bodyContent.replace(/\.\.\/assets\//g, '/design-boilerplate/assets/');
 
     return { headContent, bodyContent };
 }
