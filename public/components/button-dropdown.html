@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Button Component</title>
+    <link rel="stylesheet" href="../assets/css/colors.css">
+    <link rel="stylesheet" href="../assets/css/typography.css">
+    <link rel="stylesheet" href="../assets/css/button-base.css">
+    <link rel="stylesheet" href="../assets/css/button-standard.css">
+    <link rel="stylesheet" href="../assets/css/button-dropdown.css">
+    <link rel="stylesheet" href="../assets/css/icons.css">
+    <style>
+        body {
+            padding: 40px;
+            background-color: #f8fafc;
+            /* Subtle background to check contrast */
+            font-family: var(--font-family);
+            color: rgb(var(--text-primary));
+        }
+
+        .showcase-container {
+            max-width: 1200px;
+            /* Wider to fit all variants */
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+        }
+
+        h1 {
+            margin-bottom: 32px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+        }
+
+        .variant-grid {
+            display: grid;
+            grid-template-columns: 120px repeat(4, 1fr);
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .grid-header {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #888;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .row-label {
+            font-size: 12px;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .cell {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="showcase-container">
+        <h1>Dropdown Button Showcase</h1>
+
+        <!-- Primary Style -->
+        <h2>Primary Style</h2>
+        <div class="variant-grid">
+            <!-- Headers -->
+            <div></div>
+            <div class="grid-header">Default</div>
+            <div class="grid-header">Hover</div>
+            <div class="grid-header">Active</div>
+            <div class="grid-header">Disabled</div>
+
+            <!-- Medium Label -->
+            <div class="row-label">Medium</div>
+            <div class="cell"><button class="btn btn-primary btn-md btn-dropdown">Label <svg class="dropdown-chevron"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+            <div class="cell"><button class="btn btn-primary btn-md btn-dropdown hover">Label <svg
+                        class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+            <div class="cell"><button class="btn btn-primary btn-md btn-dropdown active">Label <svg
+                        class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+            <div class="cell"><button class="btn btn-primary btn-md btn-dropdown disabled" disabled>Label <svg
+                        class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+
+            <!-- Medium Icon + Label -->
+            <div class="row-label">Medium + Icon</div>
+            <div class="cell">
+                <button class="btn btn-primary btn-md btn-dropdown">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/add.svg'); -webkit-mask-image: url('../assets/icons/add.svg');"></span>
+                    Label
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-primary btn-md btn-dropdown hover">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/add.svg'); -webkit-mask-image: url('../assets/icons/add.svg');"></span>
+                    Label
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-primary btn-md btn-dropdown active">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/add.svg'); -webkit-mask-image: url('../assets/icons/add.svg');"></span>
+                    Label
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-primary btn-md btn-dropdown disabled" disabled>
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/add.svg'); -webkit-mask-image: url('../assets/icons/add.svg');"></span>
+                    Label
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+
+            <!-- Small Label -->
+            <div class="row-label">Small</div>
+            <div class="cell"><button class="btn btn-primary btn-sm btn-dropdown">Label <svg class="dropdown-chevron"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+            <div class="cell"><button class="btn btn-primary btn-sm btn-dropdown hover">Label <svg
+                        class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+            <div class="cell"><button class="btn btn-primary btn-sm btn-dropdown active">Label <svg
+                        class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+            <div class="cell"><button class="btn btn-primary btn-sm btn-dropdown disabled" disabled>Label <svg
+                        class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+
+            <!-- Small Icon + Label -->
+            <div class="row-label">Small + Icon</div>
+            <div class="cell">
+                <button class="btn btn-primary btn-sm btn-dropdown">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/add.svg'); -webkit-mask-image: url('../assets/icons/add.svg');"></span>
+                    Label
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-primary btn-sm btn-dropdown hover">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/add.svg'); -webkit-mask-image: url('../assets/icons/add.svg');"></span>
+                    Label
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-primary btn-sm btn-dropdown active">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/add.svg'); -webkit-mask-image: url('../assets/icons/add.svg');"></span>
+                    Label
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-primary btn-sm btn-dropdown disabled" disabled>
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/add.svg'); -webkit-mask-image: url('../assets/icons/add.svg');"></span>
+                    Label
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Secondary Style -->
+        <h2>Secondary Style</h2>
+        <div class="variant-grid">
+            <!-- Headers -->
+            <div></div>
+            <div class="grid-header">Default</div>
+            <div class="grid-header">Hover</div>
+            <div class="grid-header">Active</div>
+            <div class="grid-header">Disabled</div>
+
+            <!-- Medium Label -->
+            <div class="row-label">Medium</div>
+            <div class="cell"><button class="btn btn-secondary btn-md btn-dropdown">Label <svg class="dropdown-chevron"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+            <div class="cell"><button class="btn btn-secondary btn-md btn-dropdown hover">Label <svg
+                        class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+            <div class="cell"><button class="btn btn-secondary btn-md btn-dropdown active">Label <svg
+                        class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+            <div class="cell"><button class="btn btn-secondary btn-md btn-dropdown disabled" disabled>Label <svg
+                        class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+
+            <!-- Medium Icon + Label -->
+            <div class="row-label">Medium + Icon</div>
+            <div class="cell">
+                <button class="btn btn-secondary btn-md btn-dropdown">
+                    <svg class="leading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    Label
+                    <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-secondary btn-md btn-dropdown hover">
+                    <svg class="leading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    Label
+                    <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-secondary btn-md btn-dropdown active">
+                    <svg class="leading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    Label
+                    <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-secondary btn-md btn-dropdown disabled" disabled>
+                    <svg class="leading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    Label
+                    <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Small Label -->
+            <div class="row-label">Small</div>
+            <div class="cell"><button class="btn btn-secondary btn-sm btn-dropdown">Label <svg class="dropdown-chevron"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+            <div class="cell"><button class="btn btn-secondary btn-sm btn-dropdown hover">Label <svg
+                        class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+            <div class="cell"><button class="btn btn-secondary btn-sm btn-dropdown active">Label <svg
+                        class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+            <div class="cell"><button class="btn btn-secondary btn-sm btn-dropdown disabled" disabled>Label <svg
+                        class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+
+            <!-- Small Icon + Label -->
+            <div class="row-label">Small + Icon</div>
+            <div class="cell">
+                <button class="btn btn-secondary btn-sm btn-dropdown">
+                    <svg class="leading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    Label
+                    <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-secondary btn-sm btn-dropdown hover">
+                    <svg class="leading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    Label
+                    <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-secondary btn-sm btn-dropdown active">
+                    <svg class="leading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    Label
+                    <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-secondary btn-sm btn-dropdown disabled" disabled>
+                    <svg class="leading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    Label
+                    <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Tertiary Style -->
+        <h2>Tertiary Style</h2>
+        <div class="variant-grid">
+            <!-- Headers -->
+            <div></div>
+            <div class="grid-header">Default</div>
+            <div class="grid-header">Hover</div>
+            <div class="grid-header">Active</div>
+            <div class="grid-header">Disabled</div>
+
+            <!-- Medium Label -->
+            <div class="row-label">Medium</div>
+            <div class="cell"><button class="btn btn-tertiary btn-md btn-dropdown">Label <svg class="dropdown-chevron"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+            <div class="cell"><button class="btn btn-tertiary btn-md btn-dropdown hover">Label <svg
+                        class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+            <div class="cell"><button class="btn btn-tertiary btn-md btn-dropdown active">Label <svg
+                        class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+            <div class="cell"><button class="btn btn-tertiary btn-md btn-dropdown disabled" disabled>Label <svg
+                        class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+
+            <!-- Medium Icon + Label -->
+            <div class="row-label">Medium + Icon</div>
+            <div class="cell">
+                <button class="btn btn-tertiary btn-md btn-dropdown">
+                    <svg class="leading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    Label
+                    <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-tertiary btn-md btn-dropdown hover">
+                    <svg class="leading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    Label
+                    <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-tertiary btn-md btn-dropdown active">
+                    <svg class="leading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    Label
+                    <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-tertiary btn-md btn-dropdown disabled" disabled>
+                    <svg class="leading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    Label
+                    <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Small Label -->
+            <div class="row-label">Small</div>
+            <div class="cell"><button class="btn btn-tertiary btn-sm btn-dropdown">Label <svg class="dropdown-chevron"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+            <div class="cell"><button class="btn btn-tertiary btn-sm btn-dropdown hover">Label <svg
+                        class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+            <div class="cell"><button class="btn btn-tertiary btn-sm btn-dropdown active">Label <svg
+                        class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+            <div class="cell"><button class="btn btn-tertiary btn-sm btn-dropdown disabled" disabled>Label <svg
+                        class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></button></div>
+
+            <!-- Small Icon + Label -->
+            <div class="row-label">Small + Icon</div>
+            <div class="cell">
+                <button class="btn btn-tertiary btn-sm btn-dropdown">
+                    <svg class="leading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    Label
+                    <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-tertiary btn-sm btn-dropdown hover">
+                    <svg class="leading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    Label
+                    <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-tertiary btn-sm btn-dropdown active">
+                    <svg class="leading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    Label
+                    <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-tertiary btn-sm btn-dropdown disabled" disabled>
+                    <svg class="leading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    Label
+                    <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

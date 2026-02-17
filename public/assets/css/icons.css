@@ -1,0 +1,26 @@
+/* Icon Utility */
+.icon-svg {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--size-icon-4);
+    height: var(--size-icon-4);
+    background-color: currentColor;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+}
+
+/* Base sizing for different button sizes */
+.btn-sm .icon-svg {
+    width: var(--size-icon-3);
+    height: var(--size-icon-3);
+}
+
+.btn-xs .icon-svg {
+    width: var(--size-icon-2);
+    height: var(--size-icon-2);
+}

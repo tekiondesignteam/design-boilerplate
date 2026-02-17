@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lozenge Variants</title>
+    <link rel="stylesheet" href="../assets/css/colors.css">
+    <link rel="stylesheet" href="../assets/css/typography.css">
+    <link rel="stylesheet" href="lozenge.css">
+    <link rel="stylesheet" href="../assets/css/icons.css">
+    <style>
+        body {
+            padding: 40px;
+            background-color: rgb(var(--bg-muted));
+            font-family: var(--font-family);
+        }
+
+        .wrapper {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        .lozenge-grid {
+            display: grid;
+            grid-template-columns: 100px repeat(8, auto);
+            /* Label + 8 variants */
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 48px;
+        }
+
+        .grid-header {
+            font-size: 11px;
+            font-weight: 600;
+            color: rgb(var(--text-secondary));
+            text-align: left;
+        }
+
+        .row-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: rgb(var(--text-secondary));
+        }
+
+        .section-header {
+            grid-column: 1 / -1;
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 24px;
+            margin-bottom: 8px;
+            border-bottom: 2px solid rgb(var(--border-primary));
+            padding-bottom: 8px;
+            color: rgb(var(--text-primary));
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="heading-1">Lozenge Components Matrix</h1>
+
+        <div class="lozenge-grid">
+            <div class="section-header">Default Variants</div>
+
+            <!-- Headers -->
+            <div></div> <!-- Corner -->
+
+            <div class="grid-header">Pill Small<br>Solid</div>
+            <div class="grid-header">Pill Small<br>Outline</div>
+
+            <div class="grid-header">Pill Large<br>Solid</div>
+            <div class="grid-header">Pill Large<br>Outline</div>
+
+            <div class="grid-header">Square Small<br>Solid</div>
+            <div class="grid-header">Square Small<br>Outline</div>
+
+            <div class="grid-header">Square Large<br>Solid</div>
+            <div class="grid-header">Square Large<br>Outline</div>
+
+            <!-- Accent -->
+            <div class="row-label">Accent</div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-solid-accent">Label</span></div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-outline-accent">Label</span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-solid-accent">Label</span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-outline-accent">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-solid-accent">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-outline-accent">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-solid-accent">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-outline-accent">Label</span></div>
+
+            <!-- Negative -->
+            <div class="row-label">Negative</div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-solid-negative">Label</span></div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-outline-negative">Label</span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-solid-negative">Label</span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-outline-negative">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-solid-negative">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-outline-negative">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-solid-negative">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-outline-negative">Label</span></div>
+
+            <!-- Warning -->
+            <div class="row-label">Warning</div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-solid-warning">Label</span></div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-outline-warning">Label</span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-solid-warning">Label</span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-outline-warning">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-solid-warning">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-outline-warning">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-solid-warning">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-outline-warning">Label</span></div>
+
+            <!-- Positive -->
+            <div class="row-label">Positive</div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-solid-positive">Label</span></div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-outline-positive">Label</span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-solid-positive">Label</span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-outline-positive">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-solid-positive">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-outline-positive">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-solid-positive">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-outline-positive">Label</span></div>
+
+            <!-- Dark / Slate -->
+            <div class="row-label">Dark</div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-solid-dark">Label</span></div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-outline-dark">Label</span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-solid-dark">Label</span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-outline-dark">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-solid-dark">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-outline-dark">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-solid-dark">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-outline-dark">Label</span></div>
+
+            <!-- Neutral (Light Grey) -->
+            <div class="row-label">Neutral</div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-solid-neutral">Label</span></div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-outline-neutral">Label</span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-solid-neutral">Label</span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-outline-neutral">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-solid-neutral">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-outline-neutral">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-solid-neutral">Label</span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-outline-neutral">Label</span></div>
+        </div>
+
+        <div class="lozenge-grid">
+            <div class="section-header">Variants with Close Icon</div>
+
+            <!-- Headers -->
+            <div></div> <!-- Corner -->
+
+            <div class="grid-header">Pill Small<br>Solid</div>
+            <div class="grid-header">Pill Small<br>Outline</div>
+
+            <div class="grid-header">Pill Large<br>Solid</div>
+            <div class="grid-header">Pill Large<br>Outline</div>
+
+            <div class="grid-header">Square Small<br>Solid</div>
+            <div class="grid-header">Square Small<br>Outline</div>
+
+            <div class="grid-header">Square Large<br>Solid</div>
+            <div class="grid-header">Square Large<br>Outline</div>
+
+            <!-- Accent -->
+            <div class="row-label">Accent</div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-solid-accent">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-outline-accent">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-solid-accent">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-outline-accent">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-solid-accent">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-outline-accent">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-solid-accent">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-outline-accent">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+
+            <!-- Negative -->
+            <div class="row-label">Negative</div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-solid-negative">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-outline-negative">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-solid-negative">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-outline-negative">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-solid-negative">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-outline-negative">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-solid-negative">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-outline-negative">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+
+            <!-- Warning -->
+            <div class="row-label">Warning</div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-solid-warning">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-outline-warning">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-solid-warning">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-outline-warning">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-solid-warning">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-outline-warning">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-solid-warning">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-outline-warning">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+
+            <!-- Positive -->
+            <div class="row-label">Positive</div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-solid-positive">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-outline-positive">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-solid-positive">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-outline-positive">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-solid-positive">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-outline-positive">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-solid-positive">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-outline-positive">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+
+            <!-- Dark / Slate -->
+            <div class="row-label">Dark</div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-solid-dark">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-outline-dark">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-solid-dark">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-outline-dark">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-solid-dark">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-outline-dark">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-solid-dark">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-outline-dark">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+
+            <!-- Neutral (Light Grey) -->
+            <div class="row-label">Neutral</div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-solid-neutral">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-pill lozenge-small lozenge-outline-neutral">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-solid-neutral">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-pill lozenge-large lozenge-outline-neutral">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-solid-neutral">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-small lozenge-outline-neutral">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-solid-neutral">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+            <div><span class="lozenge lozenge-square lozenge-large lozenge-outline-neutral">Label <span
+                        class="lozenge-close"><svg viewBox="0 0 10 10">
+                            <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg></span></span></div>
+        </div>
+    </div>
+</body>
+
+</html>

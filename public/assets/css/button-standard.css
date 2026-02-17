@@ -1,0 +1,87 @@
+/* Primary Style */
+.btn-primary {
+    background-color: rgb(var(--accent-bg));
+    color: rgb(var(--text-on-color));
+}
+
+.btn-primary:hover,
+.btn-primary.hover {
+    background-color: rgb(var(--accent-bg-hover));
+}
+
+.btn-primary:active,
+.btn-primary.active {
+    background-color: rgb(var(--accent-bg-active));
+}
+
+.btn-primary:disabled,
+.btn-primary.disabled {
+    background-color: rgb(var(--bg-disabled));
+    color: rgb(var(--text-on-color-disabled));
+    cursor: not-allowed;
+    border-color: transparent;
+}
+
+/* Secondary Style */
+.btn-secondary {
+    background-color: rgb(var(--bg-primary));
+    border-color: rgb(var(--border-dark));
+    color: rgb(var(--text-primary));
+}
+
+.btn-secondary:hover,
+.btn-secondary.hover {
+    background-color: rgb(var(--bg-hover));
+    border-color: rgb(var(--accent-border-hover));
+    color: rgb(var(--accent-text-hover));
+}
+
+.btn-secondary:active,
+.btn-secondary.active {
+    background-color: rgb(var(--bg-active));
+    border-color: rgb(var(--accent-border-active));
+    color: rgb(var(--accent-text-active));
+}
+
+.btn-secondary:disabled,
+.btn-secondary.disabled {
+    background-color: transparent;
+    border-color: rgb(var(--border-disabled));
+    color: rgb(var(--text-on-color-disabled));
+    cursor: not-allowed;
+}
+
+/* Tertiary Style */
+.btn-tertiary {
+    background-color: transparent;
+    color: rgb(var(--text-secondary));
+}
+
+.btn-tertiary:hover,
+.btn-tertiary.hover {
+    background-color: rgb(var(--bg-hover));
+    color: rgb(var(--accent-text-hover));
+}
+
+.btn-tertiary:active,
+.btn-tertiary.active {
+    background-color: rgb(var(--bg-active));
+    color: rgb(var(--accent-text-active));
+}
+
+.btn-tertiary:disabled,
+.btn-tertiary.disabled {
+    background-color: transparent;
+    color: rgb(var(--text-on-color-disabled));
+    cursor: not-allowed;
+}
+
+/* Icon Coloring */
+.btn-primary svg {
+    fill: currentColor;
+}
+
+.btn-secondary svg,
+.btn-tertiary svg {
+    fill: currentColor;
+}

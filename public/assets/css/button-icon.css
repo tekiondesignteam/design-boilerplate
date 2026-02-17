@@ -1,0 +1,160 @@
+/* Icon Button Specific Styles */
+
+.btn-icon {
+    padding: 0;
+    width: auto;
+    border-radius: var(--radius-1);
+    /* From Figma: var(--borderradius/1,2px) */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sizes */
+.btn-icon.btn-md {
+    width: var(--height-4);
+    height: var(--height-4);
+}
+
+.btn-icon.btn-sm {
+    width: var(--height-2);
+    height: var(--height-2);
+}
+
+.btn-icon.btn-xs {
+    width: var(--height-0);
+    height: var(--height-0);
+}
+
+.btn-icon.btn-xs svg {
+    width: var(--size-icon-2);
+    /* 16px button needs smaller icon? Or is the icon 16px too? Figma says "Icon Size... size-[16px]" usually. If button is 16px, icon 16px might be tight/full bleed. Let's try 12px or check Figma. Figma node says "Icon Size" shrink-0 size-[16px]". If the button is 16px, it probably fits exactly or there's no padding. */
+    height: var(--size-icon-2);
+}
+
+/* Override base icon size for xs if needed, but if Figma says 16px icon in standard, maybe XS uses 12? 
+   Let's assume 16px for md/sm and maybe 12 for xs or 14. 
+   Actually, let's keep it 16px default and see. If button is 16px, 16px icon fits exactly.
+*/
+.btn-icon.btn-xs svg {
+    width: var(--size-icon-2);
+    height: var(--size-icon-2);
+}
+
+.btn-icon.btn-sm svg,
+.btn-icon.btn-md svg {
+    width: var(--size-icon-4);
+    height: var(--size-icon-4);
+}
+
+
+/* Styles: Action */
+/* Action - Filled */
+.btn-action-filled {
+    background-color: rgb(var(--bg-secondary));
+    color: rgb(var(--icon-dark));
+    border: none;
+}
+
+.btn-action-filled:hover,
+.btn-action-filled.hover {
+    background-color: rgb(var(--bg-hover));
+    color: rgb(var(--accent-icon-hover));
+}
+
+/* Rechecking Figma Screenshot:
+   Action filled hover often goes to a slighter darker gray or blueish tint. 
+   From colors.css: --bg-hover: 235 244 255 (light blue). 
+   Let's use that.
+*/
+
+.btn-action-filled:active,
+.btn-action-filled.active {
+    background-color: rgb(var(--bg-active));
+    color: rgb(var(--accent-icon-active));
+}
+
+/* Action - Ghost (No Background) */
+.btn-action-ghost {
+    background-color: transparent;
+    color: rgb(var(--icon-dark));
+    border: none;
+}
+
+.btn-action-ghost:hover,
+.btn-action-ghost.hover {
+    background-color: rgb(var(--bg-hover));
+    color: rgb(var(--accent-icon-hover));
+}
+
+.btn-action-ghost:active,
+.btn-action-ghost.active {
+    background-color: rgb(var(--bg-active));
+    color: rgb(var(--accent-icon-active));
+}
+
+
+/* Styles: Destructive */
+/* Destructive - Filled */
+.btn-destructive-filled {
+    background-color: rgb(var(--bg-negative));
+    color: rgb(var(--text-on-color));
+    /* White text usually on negative */
+    border: none;
+}
+
+.btn-destructive-filled:hover,
+.btn-destructive-filled.hover {
+    background-color: rgb(var(--bg-negative-hover));
+}
+
+.btn-destructive-filled:active,
+.btn-destructive-filled.active {
+    background-color: rgb(var(--bg-negative-active));
+}
+
+/* Destructive - Ghost */
+.btn-destructive-ghost {
+    background-color: transparent;
+    color: rgb(var(--negative-icon));
+    border: none;
+}
+
+.btn-destructive-ghost:hover,
+.btn-destructive-ghost.hover {
+    background-color: rgb(var(--bg-negative-light));
+    /* Light red bg hover? Check colors.css */
+    color: rgb(var(--negative-icon-hover));
+}
+
+.btn-destructive-ghost:active,
+.btn-destructive-ghost.active {
+    background-color: rgb(var(--bg-negative-light));
+    /* Or darker? */
+    color: rgb(var(--negative-icon-active));
+}
+
+
+
+/* Disabled State */
+.btn-icon:disabled,
+.btn-icon.disabled {
+    cursor: not-allowed;
+    color: rgb(var(--icon-disabled));
+}
+
+/* For filled variants, disabled state includes a background */
+.btn-action-filled:disabled,
+.btn-action-filled.disabled,
+.btn-destructive-filled:disabled,
+.btn-destructive-filled.disabled {
+    background-color: rgb(var(--bg-disabled));
+}
+
+/* For ghost variants, disabled state remains transparent */
+.btn-action-ghost:disabled,
+.btn-action-ghost.disabled,
+.btn-destructive-ghost:disabled,
+.btn-destructive-ghost.disabled {
+    background-color: transparent;
+}

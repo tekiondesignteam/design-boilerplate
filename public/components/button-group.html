@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Group Component</title>
+    <link rel="stylesheet" href="../assets/css/colors.css">
+    <link rel="stylesheet" href="../assets/css/typography.css">
+    <link rel="stylesheet" href="button-group.css">
+    <link rel="stylesheet" href="../assets/css/icons.css">
+    <style>
+        body {
+            padding: 40px;
+            background-color: rgb(var(--bg-muted));
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            margin-bottom: 24px;
+            font-size: 24px;
+            font-weight: 600;
+            color: rgb(var(--text-primary));
+        }
+
+        .showcase-row {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            margin-bottom: 32px;
+        }
+
+        .label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 12px;
+            color: rgb(var(--text-tertiary));
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Primary Button Group -->
+    <section>
+        <h2>Primary Button Group</h2>
+
+        <div class="showcase-row">
+            <div>
+                <span class="label">Text Only</span>
+                <div class="button-group">
+                    <button class="button-group-item selected">Label 1</button>
+                    <button class="button-group-item">Label 2</button>
+                    <button class="button-group-item">Label 3</button>
+                </div>
+            </div>
+
+            <div>
+                <span class="label">Icon + Text</span>
+                <div class="button-group">
+                    <button class="button-group-item selected">
+                        <span class="icon-svg"
+                            style="mask-image: url('../assets/icons/info.svg'); -webkit-mask-image: url('../assets/icons/info.svg');"></span>
+                        <span>Info</span>
+                    </button>
+                    <button class="button-group-item">
+                        <span class="icon-svg"
+                            style="mask-image: url('../assets/icons/gear.svg'); -webkit-mask-image: url('../assets/icons/gear.svg');"></span>
+                        <span>Settings</span>
+                    </button>
+                </div>
+            </div>
+
+            <div>
+                <span class="label">Icon Only</span>
+                <div class="button-group">
+                    <button class="button-group-item">
+                        <span class="icon-svg"
+                            style="mask-image: url('../assets/icons/menu.svg'); -webkit-mask-image: url('../assets/icons/menu.svg');"></span>
+                    </button>
+                    <button class="button-group-item selected">
+                        <span class="icon-svg"
+                            style="mask-image: url('../assets/icons/nine-dots-menu.svg'); -webkit-mask-image: url('../assets/icons/nine-dots-menu.svg');"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div>
+                <span class="label">With Badge</span>
+                <div class="button-group">
+                    <button class="button-group-item selected">
+                        <span>Messages</span>
+                        <span class="badge">21</span>
+                    </button>
+                    <button class="button-group-item">
+                        <span>Notifications</span>
+                        <span class="badge">5</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="showcase-row">
+            <div>
+                <span class="label">Disabled</span>
+                <div class="button-group">
+                    <button class="button-group-item" disabled>Option 1</button>
+                    <button class="button-group-item" disabled>Option 2</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secondary Button Group -->
+    <section>
+        <h2>Secondary Button Group</h2>
+        <p class="label">Gray background default, usually used on white surfaces or for lower emphasis.</p>
+
+        <div class="showcase-row">
+            <div>
+                <span class="label">Text Only</span>
+                <div class="button-group button-group-secondary">
+                    <button class="button-group-item selected">Daily</button>
+                    <button class="button-group-item">Weekly</button>
+                    <button class="button-group-item">Monthly</button>
+                </div>
+            </div>
+
+            <div>
+                <span class="label">Small Size</span>
+                <div class="button-group button-group-secondary small">
+                    <button class="button-group-item">Small 1</button>
+                    <button class="button-group-item selected">Small 2</button>
+                    <button class="button-group-item">Small 3</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Simple logic to toggle selection
+        document.addEventListener('click', function (e) {
+            const button = e.target.closest('.button-group-item');
+            if (button && !button.disabled) {
+                const group = button.closest('.button-group');
+                if (group) {
+                    // Deselect all in this group
+                    group.querySelectorAll('.button-group-item').forEach(b => b.classList.remove('selected'));
+                    // Select clicked
+                    button.classList.add('selected');
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructive Button Component - All Variants</title>
+    <link rel="stylesheet" href="../assets/css/colors.css">
+    <link rel="stylesheet" href="../assets/css/typography.css">
+    <link rel="stylesheet" href="../assets/css/button-base.css">
+    <link rel="stylesheet" href="../assets/css/button-standard.css">
+    <link rel="stylesheet" href="../assets/css/button-destructive.css">
+    <style>
+        body {
+            padding: 60px;
+            background-color: rgb(var(--bg-muted));
+            font-family: var(--font-family);
+        }
+
+        .showcase-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            color: rgb(var(--text-primary));
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 32px;
+            color: rgb(var(--text-primary));
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: rgb(var(--border-primary));
+        }
+
+        .variant-grid {
+            display: grid;
+            grid-template-columns: 200px repeat(4, 1fr);
+            gap: 24px;
+            align-items: center;
+        }
+
+        .grid-header {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: rgb(var(--text-tertiary));
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgb(var(--border-light));
+        }
+
+        .row-label {
+            font-size: 14px;
+            font-weight: 500;
+            color: rgb(var(--text-secondary));
+            padding: 16px 0;
+        }
+
+        .button-cell {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 16px 0;
+        }
+
+        .icon-svg {
+            width: 16px;
+            height: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="showcase-container">
+        <h1>Destructive Button Variants</h1>
+
+        <!-- PRIMARY DESTRUCTIVE BUTTONS SECTION -->
+        <div class="section">
+            <h2 class="section-title">Destructive Primary</h2>
+
+            <div class="variant-grid">
+                <!-- Headers -->
+                <div class="grid-header">Variant & Size</div>
+                <div class="grid-header">Default</div>
+                <div class="grid-header">Hover</div>
+                <div class="grid-header">Active</div>
+                <div class="grid-header">Disabled</div>
+
+                <!-- Medium Label -->
+                <div class="row-label">Medium</div>
+                <div class="button-cell"><button class="btn btn-md btn-destructive">Delete</button></div>
+                <div class="button-cell"><button class="btn btn-md btn-destructive hover">Delete</button></div>
+                <div class="button-cell"><button class="btn btn-md btn-destructive active">Delete</button></div>
+                <div class="button-cell"><button class="btn btn-md btn-destructive" disabled>Delete</button></div>
+
+                <!-- Medium Left Icon -->
+                <div class="row-label">Medium Left Icon</div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-destructive">
+                        <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+                        </svg>
+                        Delete
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-destructive hover">
+                        <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+                        </svg>
+                        Delete
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-destructive active">
+                        <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+                        </svg>
+                        Delete
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-destructive" disabled>
+                        <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+                        </svg>
+                        Delete
+                    </button>
+                </div>
+
+                <!-- Medium Right Icon -->
+                <div class="row-label">Medium Right Icon</div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-destructive">
+                        Delete
+                        <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-destructive hover">
+                        Delete
+                        <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-destructive active">
+                        Delete
+                        <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-destructive" disabled>
+                        Delete
+                        <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Small Label -->
+                <div class="row-label">Small</div>
+                <div class="button-cell"><button class="btn btn-sm btn-destructive">Delete</button></div>
+                <div class="button-cell"><button class="btn btn-sm btn-destructive hover">Delete</button></div>
+                <div class="button-cell"><button class="btn btn-sm btn-destructive active">Delete</button></div>
+                <div class="button-cell"><button class="btn btn-sm btn-destructive" disabled>Delete</button></div>
+            </div>
+        </div>
+
+        <!-- SECONDARY DESTRUCTIVE BUTTONS SECTION -->
+        <div class="section">
+            <h2 class="section-title">Destructive Secondary</h2>
+
+            <div class="variant-grid">
+                <!-- Headers -->
+                <div class="grid-header">Variant & Size</div>
+                <div class="grid-header">Default</div>
+                <div class="grid-header">Hover</div>
+                <div class="grid-header">Active</div>
+                <div class="grid-header">Disabled</div>
+
+                <!-- Medium Label -->
+                <div class="row-label">Medium</div>
+                <div class="button-cell"><button class="btn btn-md btn-destructive-secondary">Cancel</button></div>
+                <div class="button-cell"><button class="btn btn-md btn-destructive-secondary hover">Cancel</button>
+                </div>
+                <div class="button-cell"><button class="btn btn-md btn-destructive-secondary active">Cancel</button>
+                </div>
+                <div class="button-cell"><button class="btn btn-md btn-destructive-secondary" disabled>Cancel</button>
+                </div>
+
+                <!-- Medium Left Icon -->
+                <div class="row-label">Medium Left Icon</div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-destructive-secondary">
+                        <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+                        </svg>
+                        Cancel
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-destructive-secondary hover">
+                        <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+                        </svg>
+                        Cancel
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-destructive-secondary active">
+                        <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+                        </svg>
+                        Cancel
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-destructive-secondary" disabled>
+                        <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+                        </svg>
+                        Cancel
+                    </button>
+                </div>
+
+                <!-- Small Label -->
+                <div class="row-label">Small</div>
+                <div class="button-cell"><button class="btn btn-sm btn-destructive-secondary">Cancel</button></div>
+                <div class="button-cell"><button class="btn btn-sm btn-destructive-secondary hover">Cancel</button>
+                </div>
+                <div class="button-cell"><button class="btn btn-sm btn-destructive-secondary active">Cancel</button>
+                </div>
+                <div class="button-cell"><button class="btn btn-sm btn-destructive-secondary" disabled>Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- TERTIARY DESTRUCTIVE BUTTONS SECTION -->
+        <div class="section">
+            <h2 class="section-title">Destructive Tertiary</h2>
+
+            <div class="variant-grid">
+                <!-- Headers -->
+                <div class="grid-header">Variant & Size</div>
+                <div class="grid-header">Default</div>
+                <div class="grid-header">Hover</div>
+                <div class="grid-header">Active</div>
+                <div class="grid-header">Disabled</div>
+
+                <!-- Medium Label -->
+                <div class="row-label">Medium</div>
+                <div class="button-cell"><button class="btn btn-md btn-destructive-tertiary">Remove</button></div>
+                <div class="button-cell"><button class="btn btn-md btn-destructive-tertiary hover">Remove</button></div>
+                <div class="button-cell"><button class="btn btn-md btn-destructive-tertiary active">Remove</button>
+                </div>
+                <div class="button-cell"><button class="btn btn-md btn-destructive-tertiary" disabled>Remove</button>
+                </div>
+
+                <!-- Medium Left Icon -->
+                <div class="row-label">Medium Left Icon</div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-destructive-tertiary">
+                        <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+                        </svg>
+                        Remove
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-destructive-tertiary hover">
+                        <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+                        </svg>
+                        Remove
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-destructive-tertiary active">
+                        <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+                        </svg>
+                        Remove
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-destructive-tertiary" disabled>
+                        <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+                        </svg>
+                        Remove
+                    </button>
+                </div>
+
+                <!-- Small Label -->
+                <div class="row-label">Small</div>
+                <div class="button-cell"><button class="btn btn-sm btn-destructive-tertiary">Remove</button></div>
+                <div class="button-cell"><button class="btn btn-sm btn-destructive-tertiary hover">Remove</button></div>
+                <div class="button-cell"><button class="btn btn-sm btn-destructive-tertiary active">Remove</button>
+                </div>
+                <div class="button-cell"><button class="btn btn-sm btn-destructive-tertiary" disabled>Remove</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
