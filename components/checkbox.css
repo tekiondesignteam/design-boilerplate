@@ -1,0 +1,153 @@
+/* Checkbox Component */
+
+/* Container */
+.checkbox {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: var(--space-2);
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    vertical-align: top;
+}
+
+.checkbox.disabled {
+    cursor: not-allowed;
+}
+
+/* Hidden Input - we hide it but keep it accessible */
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    margin: 0;
+}
+
+/* Custom Checkbox Base */
+.checkbox-box {
+    height: var(--size-checkbox);
+    width: var(--size-checkbox);
+    background-color: rgb(var(--bg-primary));
+    border: var(--border-width-1) solid rgb(var(--border-dark));
+    border-radius: var(--radius-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-fast) var(--ease-in-out);
+    flex-shrink: 0;
+    color: rgb(var(--text-on-color));
+    margin-top: var(--space-0);
+}
+
+/* Circular Variant */
+.checkbox.circular .checkbox-box {
+    border-radius: var(--radius-10);
+}
+
+/* Label Text */
+.checkbox-label {
+    font-family: var(--font-family);
+    font-size: var(--text-paragraph-base-size, 14px);
+    line-height: var(--text-paragraph-base-height, 16px);
+    font-weight: var(--font-weight-regular);
+    color: rgb(var(--text-primary));
+    padding-top: var(--space-1/4, 1px);
+    /* Optical alignment with 16px box */
+}
+
+/* --- Icons --- */
+.checkbox-icon {
+    width: var(--size-icon-1);
+    height: var(--size-icon-1);
+    fill: none;
+    stroke: currentColor;
+    stroke-width: var(--border-width-2);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Hide icons by default with higher specificity to beat .icon-svg */
+.checkbox-box .icon-check,
+.checkbox-box .icon-minus {
+    display: none !important;
+}
+
+/* --- States --- */
+
+/* Hover (Unchecked) */
+.checkbox:hover input:not(:disabled):not(:checked):not(:indeterminate)~.checkbox-box {
+    border-color: rgb(var(--accent-border));
+}
+
+/* Indeterminate State (Highest Priority) */
+.checkbox input:indeterminate~.checkbox-box {
+    background-color: rgb(var(--accent-bg));
+    border-color: rgb(var(--accent-border));
+}
+
+.checkbox input:indeterminate~.checkbox-box .icon-minus {
+    display: inline-flex !important;
+}
+
+/* Checked State (Only if NOT indeterminate) */
+.checkbox input:checked:not(:indeterminate)~.checkbox-box {
+    background-color: rgb(var(--accent-bg));
+    border-color: rgb(var(--accent-border));
+}
+
+.checkbox input:checked:not(:indeterminate)~.checkbox-box .icon-check {
+    display: inline-flex !important;
+}
+
+/* Hover (Checked/Indeterminate) */
+.checkbox:hover input:not(:disabled):checked~.checkbox-box,
+.checkbox:hover input:not(:disabled):indeterminate~.checkbox-box {
+    background-color: rgb(var(--accent-bg-hover));
+    border-color: rgb(var(--accent-border-hover));
+}
+
+/* Active (Pressed) State */
+.checkbox:active input:not(:disabled)~.checkbox-box {
+    border-color: rgb(var(--accent-border-active));
+}
+
+.checkbox:active input:not(:disabled):checked~.checkbox-box,
+.checkbox:active input:not(:disabled):indeterminate~.checkbox-box {
+    background-color: rgb(var(--accent-bg-active));
+    border-color: rgb(var(--accent-border-active));
+}
+
+/* Focus State */
+.checkbox input:focus-visible~.checkbox-box {
+    outline: var(--border-width-focus) solid rgb(var(--accent-border));
+    outline-offset: var(--space-1);
+}
+
+/* Disabled State */
+.checkbox input:disabled~.checkbox-box {
+    background-color: rgb(var(--bg-disabled));
+    border-color: rgb(var(--border-disabled));
+    cursor: not-allowed;
+}
+
+.checkbox input:disabled~.checkbox-label {
+    color: rgb(var(--text-disabled));
+    cursor: not-allowed;
+}
+
+.checkbox input:disabled:checked~.checkbox-box,
+.checkbox input:disabled:indeterminate~.checkbox-box {
+    background-color: rgb(var(--bg-disabled));
+    border-color: rgb(var(--border-disabled));
+    color: rgb(var(--text-disabled));
+    /* Icon color greyed out */
+}
+
+/* Checkbox group alignment if needed */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}

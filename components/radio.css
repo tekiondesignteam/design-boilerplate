@@ -1,0 +1,146 @@
+/* Radio Component */
+
+/* Container */
+.radio {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: var(--space-2);
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    vertical-align: top;
+}
+
+.radio.disabled {
+    cursor: not-allowed;
+}
+
+/* Hidden Input */
+.radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    margin: 0;
+}
+
+/* Radio Circle (The visual element) */
+.radio-circle {
+    height: var(--size-radio);
+    width: var(--size-radio);
+    background-color: rgb(var(--bg-primary));
+    border: var(--border-width-1) solid rgb(var(--border-dark));
+    border-radius: var(--radius-10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-base) var(--ease-in-out);
+    flex-shrink: 0;
+    margin-top: var(--space-0);
+    position: relative;
+}
+
+/* Inner Dot */
+.radio-circle::after {
+    content: "";
+    width: var(--space-2);
+    height: var(--space-2);
+    border-radius: var(--radius-10);
+    background-color: rgb(var(--accent-bg));
+    transform: scale(0);
+    transition: transform var(--transition-base) var(--ease-in-out);
+}
+
+/* Label Text */
+.radio-label {
+    font-family: var(--font-family);
+    font-size: var(--text-paragraph-base-size, 14px);
+    line-height: var(--text-paragraph-base-height, 16px);
+    font-weight: var(--font-weight-regular);
+    color: rgb(var(--text-primary));
+    padding-top: var(--space-1/4, 1px);
+    /* Optical alignment */
+}
+
+/* --- States --- */
+
+/* Hover (Unchecked) */
+.radio:hover input:not(:disabled):not(:checked)~.radio-circle {
+    border-color: rgb(var(--accent-border));
+}
+
+/* Checked State */
+.radio input:checked~.radio-circle {
+    border-color: rgb(var(--accent-border));
+    background-color: rgb(var(--bg-primary));
+    /* Keep white background */
+}
+
+.radio input:checked~.radio-circle::after {
+    transform: scale(1);
+    background-color: rgb(var(--accent-bg));
+}
+
+/* Hover (Checked) */
+.radio:hover input:not(:disabled):checked~.radio-circle {
+    border-color: rgb(var(--accent-border-hover));
+}
+
+.radio:hover input:not(:disabled):checked~.radio-circle::after {
+    background-color: rgb(var(--accent-bg-hover));
+}
+
+/* Active (Pressed) State */
+.radio:active input:not(:disabled)~.radio-circle {
+    border-color: rgb(var(--accent-border-active));
+}
+
+.radio:active input:not(:disabled):checked~.radio-circle {
+    border-color: rgb(var(--accent-border-active));
+}
+
+.radio:active input:not(:disabled):checked~.radio-circle::after {
+    background-color: rgb(var(--accent-bg-active));
+}
+
+/* Focus State */
+.radio input:focus-visible~.radio-circle {
+    outline: var(--border-width-focus) solid rgb(var(--accent-border));
+    outline-offset: var(--space-1);
+}
+
+/* Disabled State */
+.radio input:disabled~.radio-circle {
+    background-color: rgb(var(--bg-disabled));
+    /* Can be transparent or disabled bg */
+    border-color: rgb(var(--border-disabled));
+    cursor: not-allowed;
+}
+
+.radio input:disabled~.radio-circle::after {
+    background-color: rgb(var(--text-disabled));
+}
+
+.radio input:disabled~.radio-label {
+    color: rgb(var(--text-disabled));
+    cursor: not-allowed;
+}
+
+/* For disabled unchecked, we want empty background usually or disabled bg */
+.radio input:disabled:not(:checked)~.radio-circle {
+    background-color: rgb(var(--bg-primary));
+    /* Or bg-disabled if preferred. Figma shot looks white-ish inside for disabled unchecked? Checking.. actually disabled usually has bg-disabled. */
+    /* Let's use bg-disabled for better visibility of disabled state if it's not white in design. 
+       Re-checking screenshot... 4th item (Disabled Unchecked) looks like it has a white interior with gray border. 
+       5th item (Disabled Checked) has white interior with gray dot and gray border.
+    */
+    background-color: rgb(var(--bg-primary));
+}
+
+/* Wait, if it's disabled, the border is light gray. */
+/* Let's ensure specificity for disabled checked dot */
+.radio input:disabled:checked~.radio-circle::after {
+    background-color: rgb(var(--text-disabled));
+    /* Gray dot */
+}

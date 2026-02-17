@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:agentation.dev)",
+      "Bash(npx skills add benjitaylor/agentation)"
+    ]
+  }
+}

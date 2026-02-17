@@ -1,0 +1,173 @@
+1:"$Sreact.fragment"
+2:I[44066,["/design-boilerplate/_next/static/chunks/a69d74d4ce90b882.js","/design-boilerplate/_next/static/chunks/1cd4e51f0540fd65.js","/design-boilerplate/_next/static/chunks/376ae38163982843.js"],"default"]
+7:I[97367,["/design-boilerplate/_next/static/chunks/ff1a16fafef87110.js","/design-boilerplate/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+8:"$Sreact.suspense"
+3:Tc77,
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badge Variants</title>
+    <link rel="stylesheet" href="/design-boilerplate/assets/css/colors.css">
+    <link rel="stylesheet" href="/design-boilerplate/assets/css/typography.css">
+    <link rel="stylesheet" href="badge.css">
+    <style>
+        
+
+        .wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        .section {
+            margin-bottom: 48px;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: rgb(var(--text-tertiary));
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 24px;
+            border-bottom: 1px solid rgb(var(--border-light));
+            padding-bottom: 8px;
+        }
+
+        .badge-row {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .label {
+            width: 120px;
+            font-size: 14px;
+            color: rgb(var(--text-secondary));
+        }
+    </style>
+
+        <style>
+            .wrapper, .showcase-container { 
+                max-width: 100% !important; 
+                margin: 0 !important; 
+                padding: 0 !important; 
+                background: transparent !important; 
+                box-shadow: none !important;
+                border-radius: 0 !important;
+            }
+            .grid-container, .variant-grid, .lozenge-grid {
+                display: grid !important;
+                justify-items: start !important;
+                justify-content: start !important;
+                text-align: left !important;
+                width: fit-content !important;
+                min-width: 100% !important;
+            }
+            .grid-header, .row-label, .column-header, .cell, .lozenge-grid > div {
+                text-align: left !important;
+                justify-self: start !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: flex-start !important;
+            }
+            .section-title, .section-header {
+                margin-top: 48px !important;
+                margin-bottom: 24px !important;
+                border-bottom: 1px solid rgb(var(--border-primary)) !important;
+                padding-bottom: 12px !important;
+                text-align: left !important;
+                justify-content: flex-start !important;
+                width: 100% !important;
+                grid-column: 1 / -1 !important;
+                display: block !important;
+            }
+            .section:first-child .section-title, 
+            .section:first-child h1,
+            h1:first-child {
+                margin-top: 0 !important;
+            }
+            h1 {
+                font-size: 32px !important;
+                font-weight: var(--font-weight-bold) !important;
+                margin-bottom: 40px !important;
+                color: rgb(var(--text-primary)) !important;
+            }
+        </style>
+    4:Ta27,
+    <div class="wrapper">
+        <h1 class="heading-1">Badge Components</h1>
+
+        <!-- Character Handling -->
+        <div class="section">
+            <h2 class="section-title">Character Length Handling</h2>
+            <div class="badge-row">
+                <span class="label">Single Digit:</span>
+                <span class="badge badge-accent">2</span>
+            </div>
+            <div class="badge-row">
+                <span class="label">Double Digit:</span>
+                <span class="badge badge-accent">20</span>
+            </div>
+            <div class="badge-row">
+                <span class="label">Three Characters:</span>
+                <span class="badge badge-accent">99+</span>
+            </div>
+        </div>
+
+        <!-- Color Variants -->
+        <div class="section">
+            <h2 class="section-title">Color Variants</h2>
+
+            <div class="badge-row">
+                <span class="label">Accent:</span>
+                <span class="badge badge-accent">5</span>
+                <span class="badge badge-accent">10</span>
+            </div>
+
+            <div class="badge-row">
+                <span class="label">Neutral:</span>
+                <span class="badge badge-neutral">12</span>
+                <span class="badge badge-neutral">99</span>
+            </div>
+
+            <div class="badge-row">
+                <span class="label">Positive:</span>
+                <span class="badge badge-positive">1</span>
+                <span class="badge badge-positive">50</span>
+            </div>
+
+            <div class="badge-row">
+                <span class="label">Negative:</span>
+                <span class="badge badge-negative">3</span>
+                <span class="badge badge-negative">88</span>
+            </div>
+
+            <div class="badge-row">
+                <span class="label">Warning:</span>
+                <span class="badge badge-warning">0</span>
+                <span class="badge badge-warning">25</span>
+            </div>
+        </div>
+
+        <!-- Contextual Examples -->
+        <div class="section">
+            <h2 class="section-title">Contextual Examples</h2>
+            <div class="badge-row">
+                <span class="label">With Text:</span>
+                <p class="paragraph-base">Notifications <span class="badge badge-negative">3</span></p>
+            </div>
+            <div class="badge-row">
+                <span class="label">In a Heading:</span>
+                <h3 class="heading-6">Issues <span class="badge badge-neutral">14</span></h3>
+            </div>
+        </div>
+
+    </div>
+0:{"buildId":"Fn7HcbC8ZlBWzSxt9YEnP","rsc":["$","$1","c",{"children":[["$","div",null,{"style":{"background":"white","borderRadius":"16px","padding":"64px","boxShadow":"0 8px 48px rgba(0, 0, 0, 0.06)","border":"1px solid rgb(var(--border-primary))","minHeight":"calc(100vh - 80px)","maxWidth":"1280px","margin":"0 auto","position":"relative","overflow":"hidden"},"children":[["$","div",null,{"style":{"position":"absolute","top":0,"left":0,"right":0,"height":"4px","background":"linear-gradient(90deg, rgb(var(--accent-bg)) 0%, #BBA8F6 100%)","opacity":0.8}}],["$","$L2",null,{"headContent":"$3","bodyContent":"$4"}]]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
+5:["$","script","script-0",{"src":"/design-boilerplate/_next/static/chunks/376ae38163982843.js","async":true}]
+6:["$","$L7",null,{"children":["$","$8",null,{"name":"Next.MetadataOutlet","children":"$@9"}]}]
+9:null

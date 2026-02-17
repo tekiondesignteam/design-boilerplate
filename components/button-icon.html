@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Button Components</title>
+    <link rel="stylesheet" href="../assets/css/colors.css">
+    <link rel="stylesheet" href="../assets/css/typography.css">
+    <link rel="stylesheet" href="../assets/css/button-base.css">
+    <link rel="stylesheet" href="../assets/css/button-icon.css">
+    <link rel="stylesheet" href="../assets/css/icons.css">
+    <style>
+        body {
+            padding: 40px;
+            background-color: #f5f5f5;
+        }
+
+        .variant-section {
+            background: white;
+            padding: 24px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .variant-title {
+            font-family: var(--font-family);
+            font-size: var(--text-heading-3-size);
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: 24px;
+            color: rgb(var(--text-primary));
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 150px repeat(4, 1fr);
+            gap: 24px;
+            align-items: center;
+        }
+
+        .row-label {
+            font-family: var(--font-family);
+            font-size: var(--text-label-base-size);
+            color: rgb(var(--text-secondary));
+        }
+
+        .column-headers {
+            display: grid;
+            grid-template-columns: 150px repeat(4, 1fr);
+            gap: 24px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .header {
+            font-family: var(--font-family);
+            font-size: var(--text-label-base-size);
+            font-weight: var(--font-weight-semibold);
+            color: rgb(var(--text-secondary));
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ACTION STYLE -->
+    <div class="variant-section">
+        <h2 class="variant-title">Action (Ghost/No Background)</h2>
+        <div class="column-headers">
+            <div class="header">Size</div>
+            <div class="header">Default</div>
+            <div class="header">Hover</div>
+            <div class="header">Active</div>
+            <div class="header">Disabled</div>
+        </div>
+
+        <!-- Medium -->
+        <div class="grid" style="margin-bottom: 16px;">
+            <div class="row-label">Medium (32px)</div>
+            <div>
+                <button class="btn btn-icon btn-md btn-action-ghost" aria-label="Action Medium">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-md btn-action-ghost hover" aria-label="Action Medium Hover">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-md btn-action-ghost active" aria-label="Action Medium Active">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-md btn-action-ghost" disabled>
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Small -->
+        <div class="grid" style="margin-bottom: 16px;">
+            <div class="row-label">Small (24px)</div>
+            <div>
+                <button class="btn btn-icon btn-sm btn-action-ghost">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-sm btn-action-ghost hover">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-sm btn-action-ghost active">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-sm btn-action-ghost" disabled>
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- XSmall -->
+        <div class="grid" style="margin-bottom: 16px;">
+            <div class="row-label">XSmall (16px)</div>
+            <div>
+                <button class="btn btn-icon btn-xs btn-action-ghost">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-xs btn-action-ghost hover">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-xs btn-action-ghost active">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-xs btn-action-ghost" disabled>
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ACTION FILLED STYLE -->
+    <div class="variant-section">
+        <h2 class="variant-title">Action (Filled/Background)</h2>
+        <!-- Medium -->
+        <div class="grid" style="margin-bottom: 16px;">
+            <div class="row-label">Medium (32px)</div>
+            <div>
+                <button class="btn btn-icon btn-md btn-action-filled">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-md btn-action-filled hover">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-md btn-action-filled active">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-md btn-action-filled" disabled>
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+        </div>
+        <!-- Small -->
+        <div class="grid" style="margin-bottom: 16px;">
+            <div class="row-label">Small (24px)</div>
+            <div>
+                <button class="btn btn-icon btn-sm btn-action-filled">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-sm btn-action-filled hover">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-sm btn-action-filled active">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-sm btn-action-filled" disabled>
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+        </div>
+        <!-- XSmall -->
+        <div class="grid" style="margin-bottom: 16px;">
+            <div class="row-label">XSmall (16px)</div>
+            <div>
+                <button class="btn btn-icon btn-xs btn-action-filled">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-xs btn-action-filled hover">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-xs btn-action-filled active">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-xs btn-action-filled" disabled>
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- DESTRUCTIVE GHOST -->
+    <div class="variant-section">
+        <h2 class="variant-title">Destructive (Ghost/No Background)</h2>
+        <div class="grid" style="margin-bottom: 16px;">
+            <div class="row-label">Medium (32px)</div>
+            <div>
+                <button class="btn btn-icon btn-md btn-destructive-ghost">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-md btn-destructive-ghost hover">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-md btn-destructive-ghost active">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-md btn-destructive-ghost" disabled>
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- DESTRUCTIVE FILLED -->
+    <div class="variant-section">
+        <h2 class="variant-title">Destructive (Filled)</h2>
+        <div class="grid" style="margin-bottom: 16px;">
+            <div class="row-label">Medium (32px)</div>
+            <div>
+                <button class="btn btn-icon btn-md btn-destructive-filled">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-md btn-destructive-filled hover">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-md btn-destructive-filled active">
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-icon btn-md btn-destructive-filled" disabled>
+                    <span class="icon-svg"
+                        style="mask-image: url('../assets/icons/star-fill.svg'); -webkit-mask-image: url('../assets/icons/star-fill.svg');"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

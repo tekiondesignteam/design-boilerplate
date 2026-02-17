@@ -1,0 +1,180 @@
+1:"$Sreact.fragment"
+2:I[44066,["/design-boilerplate/_next/static/chunks/a69d74d4ce90b882.js","/design-boilerplate/_next/static/chunks/1cd4e51f0540fd65.js","/design-boilerplate/_next/static/chunks/376ae38163982843.js"],"default"]
+7:I[97367,["/design-boilerplate/_next/static/chunks/ff1a16fafef87110.js","/design-boilerplate/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+8:"$Sreact.suspense"
+3:Td3c,
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button Variants</title>
+    <link rel="stylesheet" href="/design-boilerplate/assets/css/colors.css">
+    <link rel="stylesheet" href="/design-boilerplate/assets/css/typography.css">
+    <link rel="stylesheet" href="radio.css">
+    <style>
+        
+
+        .wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px 24px;
+            align-items: center;
+        }
+
+        .grid-header {
+            font-size: 14px;
+            font-weight: 600;
+            color: rgb(var(--text-secondary));
+            text-align: left;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgb(var(--border-light));
+        }
+
+        .row-label {
+            grid-column: 1 / -1;
+            margin-top: 20px;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: rgb(var(--text-tertiary));
+            font-weight: 600;
+        }
+
+        /* Demo helper for group behavior */
+        .demo-group {
+            display: flex;
+            gap: 24px;
+            margin-top: 16px;
+        }
+    </style>
+
+        <style>
+            .wrapper, .showcase-container { 
+                max-width: 100% !important; 
+                margin: 0 !important; 
+                padding: 0 !important; 
+                background: transparent !important; 
+                box-shadow: none !important;
+                border-radius: 0 !important;
+            }
+            .grid-container, .variant-grid, .lozenge-grid {
+                display: grid !important;
+                justify-items: start !important;
+                justify-content: start !important;
+                text-align: left !important;
+                width: fit-content !important;
+                min-width: 100% !important;
+            }
+            .grid-header, .row-label, .column-header, .cell, .lozenge-grid > div {
+                text-align: left !important;
+                justify-self: start !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: flex-start !important;
+            }
+            .section-title, .section-header {
+                margin-top: 48px !important;
+                margin-bottom: 24px !important;
+                border-bottom: 1px solid rgb(var(--border-primary)) !important;
+                padding-bottom: 12px !important;
+                text-align: left !important;
+                justify-content: flex-start !important;
+                width: 100% !important;
+                grid-column: 1 / -1 !important;
+                display: block !important;
+            }
+            .section:first-child .section-title, 
+            .section:first-child h1,
+            h1:first-child {
+                margin-top: 0 !important;
+            }
+            h1 {
+                font-size: 32px !important;
+                font-weight: var(--font-weight-bold) !important;
+                margin-bottom: 40px !important;
+                color: rgb(var(--text-primary)) !important;
+            }
+        </style>
+    4:Tbd9,
+    <div class="wrapper">
+        <h1 class="heading-1">Radio Button Components</h1>
+
+        <div class="grid-container">
+            <!-- Column Headers -->
+            <div class="grid-header">Unchecked</div>
+            <div class="grid-header">Checked</div>
+            <div class="grid-header">Disabled Unchecked</div>
+            <div class="grid-header">Disabled Checked</div>
+
+            <!-- ROW: Default -->
+            <div class="row-label">States</div>
+
+            <!-- Unchecked -->
+            <label class="radio">
+                <input type="radio" name="demo-1" value="1">
+                <span class="radio-circle"></span>
+                <span class="radio-label">Label</span>
+            </label>
+
+            <!-- Checked -->
+            <label class="radio">
+                <input type="radio" name="demo-1" value="2" checked>
+                <span class="radio-circle"></span>
+                <span class="radio-label">Label</span>
+            </label>
+
+            <!-- Disabled Unchecked -->
+            <label class="radio disabled">
+                <input type="radio" name="demo-disabled-off" disabled>
+                <span class="radio-circle"></span>
+                <span class="radio-label">Label</span>
+            </label>
+
+            <!-- Disabled Checked -->
+            <label class="radio disabled">
+                <input type="radio" name="demo-disabled-on" checked disabled>
+                <span class="radio-circle"></span>
+                <span class="radio-label">Label</span>
+            </label>
+
+            <!-- ROW: Interactive Group Demo -->
+            <div class="row-label">Interactive Group Demo</div>
+
+            <div style="grid-column: 1 / -1;">
+                <p class="paragraph-base" style="margin-bottom: 12px;">Select an option:</p>
+                <div class="demo-group">
+                    <label class="radio">
+                        <input type="radio" name="group1" value="option1">
+                        <span class="radio-circle"></span>
+                        <span class="radio-label">Option 1</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="group1" value="option2" checked>
+                        <span class="radio-circle"></span>
+                        <span class="radio-label">Option 2</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="group1" value="option3">
+                        <span class="radio-circle"></span>
+                        <span class="radio-label">Option 3</span>
+                    </label>
+                    <label class="radio disabled">
+                        <input type="radio" name="group1" value="option4" disabled>
+                        <span class="radio-circle"></span>
+                        <span class="radio-label">Disabled Option</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+0:{"buildId":"Fn7HcbC8ZlBWzSxt9YEnP","rsc":["$","$1","c",{"children":[["$","div",null,{"style":{"background":"white","borderRadius":"16px","padding":"64px","boxShadow":"0 8px 48px rgba(0, 0, 0, 0.06)","border":"1px solid rgb(var(--border-primary))","minHeight":"calc(100vh - 80px)","maxWidth":"1280px","margin":"0 auto","position":"relative","overflow":"hidden"},"children":[["$","div",null,{"style":{"position":"absolute","top":0,"left":0,"right":0,"height":"4px","background":"linear-gradient(90deg, rgb(var(--accent-bg)) 0%, #BBA8F6 100%)","opacity":0.8}}],["$","$L2",null,{"headContent":"$3","bodyContent":"$4"}]]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
+5:["$","script","script-0",{"src":"/design-boilerplate/_next/static/chunks/376ae38163982843.js","async":true}]
+6:["$","$L7",null,{"children":["$","$8",null,{"name":"Next.MetadataOutlet","children":"$@9"}]}]
+9:null

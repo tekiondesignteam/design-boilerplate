@@ -1,0 +1,218 @@
+1:"$Sreact.fragment"
+2:I[44066,["/design-boilerplate/_next/static/chunks/a69d74d4ce90b882.js","/design-boilerplate/_next/static/chunks/1cd4e51f0540fd65.js","/design-boilerplate/_next/static/chunks/376ae38163982843.js"],"default"]
+7:I[97367,["/design-boilerplate/_next/static/chunks/ff1a16fafef87110.js","/design-boilerplate/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+8:"$Sreact.suspense"
+3:Te79,
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Button Component</title>
+    <link rel="stylesheet" href="/design-boilerplate/assets/css/colors.css">
+    <link rel="stylesheet" href="/design-boilerplate/assets/css/typography.css">
+    <link rel="stylesheet" href="/design-boilerplate/assets/css/button-base.css">
+    <link rel="stylesheet" href="/design-boilerplate/assets/css/button-link.css">
+    <style>
+        
+
+        .showcase-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+        }
+
+        h1 {
+            margin-bottom: 32px;
+            color: rgb(var(--text-primary));
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 120px repeat(4, 1fr);
+            gap: 32px;
+            align-items: center;
+        }
+
+        .col-header {
+            font-weight: 600;
+            color: rgb(var(--text-secondary));
+            text-align: center;
+            font-size: var(--text-label-base-size);
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgb(var(--border-light));
+            margin-bottom: 16px;
+        }
+
+        .row-label {
+            font-weight: 600;
+            color: rgb(var(--text-secondary));
+            font-size: var(--text-label-base-size);
+        }
+
+        .cell {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 48px;
+        }
+    </style>
+
+        <style>
+            .wrapper, .showcase-container { 
+                max-width: 100% !important; 
+                margin: 0 !important; 
+                padding: 0 !important; 
+                background: transparent !important; 
+                box-shadow: none !important;
+                border-radius: 0 !important;
+            }
+            .grid-container, .variant-grid, .lozenge-grid {
+                display: grid !important;
+                justify-items: start !important;
+                justify-content: start !important;
+                text-align: left !important;
+                width: fit-content !important;
+                min-width: 100% !important;
+            }
+            .grid-header, .row-label, .column-header, .cell, .lozenge-grid > div {
+                text-align: left !important;
+                justify-self: start !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: flex-start !important;
+            }
+            .section-title, .section-header {
+                margin-top: 48px !important;
+                margin-bottom: 24px !important;
+                border-bottom: 1px solid rgb(var(--border-primary)) !important;
+                padding-bottom: 12px !important;
+                text-align: left !important;
+                justify-content: flex-start !important;
+                width: 100% !important;
+                grid-column: 1 / -1 !important;
+                display: block !important;
+            }
+            .section:first-child .section-title, 
+            .section:first-child h1,
+            h1:first-child {
+                margin-top: 0 !important;
+            }
+            h1 {
+                font-size: 32px !important;
+                font-weight: var(--font-weight-bold) !important;
+                margin-bottom: 40px !important;
+                color: rgb(var(--text-primary)) !important;
+            }
+        </style>
+    4:T2458,
+    <div class="showcase-container">
+        <h1>Link Button</h1>
+
+        <div class="grid-container">
+            <div></div> <!-- Empty Corner -->
+            <div class="col-header">Default</div>
+            <div class="col-header">Hover</div>
+            <div class="col-header">Active</div>
+            <div class="col-header">Disabled</div>
+
+            <!-- Text Only -->
+            <div class="row-label">Text Only</div>
+            <div class="cell">
+                <button class="btn btn-link">Label</button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-link hover">Label</button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-link active">Label</button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-link" disabled>Label</button>
+            </div>
+
+            <!-- Icon Left -->
+            <div class="row-label">Icon Left</div>
+            <div class="cell">
+                <button class="btn btn-link icon-left">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                        <path
+                            d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.86z" />
+                    </svg>
+                    Label
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-link icon-left hover">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                        <path
+                            d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.86z" />
+                    </svg>
+                    Label
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-link icon-left active">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                        <path
+                            d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.86z" />
+                    </svg>
+                    Label
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-link icon-left" disabled>
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                        <path
+                            d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.86z" />
+                    </svg>
+                    Label
+                </button>
+            </div>
+
+            <!-- Icon Right -->
+            <div class="row-label">Icon Right</div>
+            <div class="cell">
+                <button class="btn btn-link icon-right">
+                    Label
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                        <path
+                            d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.86z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-link icon-right hover">
+                    Label
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                        <path
+                            d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.86z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-link icon-right active">
+                    Label
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                        <path
+                            d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.86z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="cell">
+                <button class="btn btn-link icon-right" disabled>
+                    Label
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                        <path
+                            d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.86z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+0:{"buildId":"Fn7HcbC8ZlBWzSxt9YEnP","rsc":["$","$1","c",{"children":[["$","div",null,{"style":{"background":"white","borderRadius":"16px","padding":"64px","boxShadow":"0 8px 48px rgba(0, 0, 0, 0.06)","border":"1px solid rgb(var(--border-primary))","minHeight":"calc(100vh - 80px)","maxWidth":"1280px","margin":"0 auto","position":"relative","overflow":"hidden"},"children":[["$","div",null,{"style":{"position":"absolute","top":0,"left":0,"right":0,"height":"4px","background":"linear-gradient(90deg, rgb(var(--accent-bg)) 0%, #BBA8F6 100%)","opacity":0.8}}],["$","$L2",null,{"headContent":"$3","bodyContent":"$4"}]]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
+5:["$","script","script-0",{"src":"/design-boilerplate/_next/static/chunks/376ae38163982843.js","async":true}]
+6:["$","$L7",null,{"children":["$","$8",null,{"name":"Next.MetadataOutlet","children":"$@9"}]}]
+9:null

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badge Variants</title>
+    <link rel="stylesheet" href="../assets/css/colors.css">
+    <link rel="stylesheet" href="../assets/css/typography.css">
+    <link rel="stylesheet" href="badge.css">
+    <style>
+        body {
+            padding: 60px;
+            background-color: rgb(var(--bg-muted));
+            font-family: var(--font-family);
+        }
+
+        .wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        .section {
+            margin-bottom: 48px;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: rgb(var(--text-tertiary));
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 24px;
+            border-bottom: 1px solid rgb(var(--border-light));
+            padding-bottom: 8px;
+        }
+
+        .badge-row {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .label {
+            width: 120px;
+            font-size: 14px;
+            color: rgb(var(--text-secondary));
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="heading-1">Badge Components</h1>
+
+        <!-- Character Handling -->
+        <div class="section">
+            <h2 class="section-title">Character Length Handling</h2>
+            <div class="badge-row">
+                <span class="label">Single Digit:</span>
+                <span class="badge badge-accent">2</span>
+            </div>
+            <div class="badge-row">
+                <span class="label">Double Digit:</span>
+                <span class="badge badge-accent">20</span>
+            </div>
+            <div class="badge-row">
+                <span class="label">Three Characters:</span>
+                <span class="badge badge-accent">99+</span>
+            </div>
+        </div>
+
+        <!-- Color Variants -->
+        <div class="section">
+            <h2 class="section-title">Color Variants</h2>
+
+            <div class="badge-row">
+                <span class="label">Accent:</span>
+                <span class="badge badge-accent">5</span>
+                <span class="badge badge-accent">10</span>
+            </div>
+
+            <div class="badge-row">
+                <span class="label">Neutral:</span>
+                <span class="badge badge-neutral">12</span>
+                <span class="badge badge-neutral">99</span>
+            </div>
+
+            <div class="badge-row">
+                <span class="label">Positive:</span>
+                <span class="badge badge-positive">1</span>
+                <span class="badge badge-positive">50</span>
+            </div>
+
+            <div class="badge-row">
+                <span class="label">Negative:</span>
+                <span class="badge badge-negative">3</span>
+                <span class="badge badge-negative">88</span>
+            </div>
+
+            <div class="badge-row">
+                <span class="label">Warning:</span>
+                <span class="badge badge-warning">0</span>
+                <span class="badge badge-warning">25</span>
+            </div>
+        </div>
+
+        <!-- Contextual Examples -->
+        <div class="section">
+            <h2 class="section-title">Contextual Examples</h2>
+            <div class="badge-row">
+                <span class="label">With Text:</span>
+                <p class="paragraph-base">Notifications <span class="badge badge-negative">3</span></p>
+            </div>
+            <div class="badge-row">
+                <span class="label">In a Heading:</span>
+                <h3 class="heading-6">Issues <span class="badge badge-neutral">14</span></h3>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

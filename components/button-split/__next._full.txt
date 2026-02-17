@@ -1,0 +1,309 @@
+1:"$Sreact.fragment"
+2:I[39756,["/design-boilerplate/_next/static/chunks/ff1a16fafef87110.js","/design-boilerplate/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
+3:I[37457,["/design-boilerplate/_next/static/chunks/ff1a16fafef87110.js","/design-boilerplate/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
+4:I[31012,["/design-boilerplate/_next/static/chunks/a69d74d4ce90b882.js"],"Agentation"]
+5:I[22016,["/design-boilerplate/_next/static/chunks/a69d74d4ce90b882.js","/design-boilerplate/_next/static/chunks/1cd4e51f0540fd65.js"],""]
+6:I[20866,["/design-boilerplate/_next/static/chunks/a69d74d4ce90b882.js","/design-boilerplate/_next/static/chunks/1cd4e51f0540fd65.js"],"default"]
+a:I[68027,["/design-boilerplate/_next/static/chunks/ff1a16fafef87110.js","/design-boilerplate/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
+:HL["/design-boilerplate/_next/static/chunks/97f89177a5d108c3.css","style"]
+:HL["/design-boilerplate/assets/css/colors.css","style"]
+:HL["/design-boilerplate/assets/css/typography.css","style"]
+:HL["/design-boilerplate/assets/css/icons.css","style"]
+:HL["/design-boilerplate/assets/css/tokens.css","style"]
+0:{"P":null,"b":"Fn7HcbC8ZlBWzSxt9YEnP","c":["","components","button-split",""],"q":"","i":false,"f":[[["",{"children":["components",{"children":[["slug","button-split","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/design-boilerplate/_next/static/chunks/97f89177a5d108c3.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/design-boilerplate/_next/static/chunks/a69d74d4ce90b882.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"/design-boilerplate/assets/css/colors.css"}],["$","link",null,{"rel":"stylesheet","href":"/design-boilerplate/assets/css/typography.css"}],["$","link",null,{"rel":"stylesheet","href":"/design-boilerplate/assets/css/icons.css"}],["$","link",null,{"rel":"stylesheet","href":"/design-boilerplate/assets/css/tokens.css"}]]}],["$","body",null,{"suppressHydrationWarning":true,"children":[["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L4",null,{}]]}]]}]]}],{"children":[["$","$1","c",{"children":[[["$","script","script-0",{"src":"/design-boilerplate/_next/static/chunks/1cd4e51f0540fd65.js","async":true,"nonce":"$undefined"}]],["$","div",null,{"style":{"display":"flex","minHeight":"100vh","fontFamily":"var(--font-family, sans-serif)"},"children":[["$","aside",null,{"style":{"width":"280px","borderRight":"1px solid rgb(var(--border-primary))","backgroundColor":"white","position":"fixed","height":"100vh","overflowY":"auto","padding":"32px 16px","zIndex":100},"children":[["$","div",null,{"style":{"marginBottom":"32px","padding":"0 12px"},"children":[["$","$L5",null,{"href":"/","style":{"textDecoration":"none","fontSize":"12px","fontWeight":"var(--font-weight-semibold)","color":"rgb(var(--text-tertiary))","textTransform":"uppercase","letterSpacing":"0.05em"},"children":"← Back to Tokens"}],["$","h2",null,{"style":{"margin":"12px 0 0 0","fontSize":"20px","fontWeight":"var(--font-weight-bold)","color":"rgb(var(--text-primary))","border":"none","padding":0},"children":"Components"}]]}],["$","$L6",null,{"components":[{"slug":"badge","name":"Badge"},{"slug":"button-destructive","name":"Button Destructive"},{"slug":"button-dropdown","name":"Button Dropdown"},{"slug":"button-group","name":"Button Group"},{"slug":"button-icon","name":"Button Icon"},{"slug":"button-link","name":"Button Link"},{"slug":"button-split","name":"Button Split"},{"slug":"button-standard","name":"Button Standard"},{"slug":"checkbox","name":"Checkbox"},{"slug":"lozenge","name":"Lozenge"},{"slug":"radio","name":"Radio"}]}]]}],["$","main",null,{"style":{"flex":1,"marginLeft":"280px","backgroundColor":"rgb(var(--bg-muted))","minHeight":"100vh","padding":"40px"},"children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"\n                body {\n                    padding: 0 !important;\n                    margin: 0 !important;\n                }\n                .nav-link:hover {\n                    background-color: rgb(var(--bg-tertiary));\n                    color: rgb(var(--accent-text)) !important;\n                }\n                /* Hide vertical scrollbar for sidebar but allow scrolling */\n                aside::-webkit-scrollbar {\n                    width: 4px;\n                }\n                aside::-webkit-scrollbar-thumb {\n                    background: rgb(var(--border-primary));\n                    border-radius: 10px;\n                }\n            "}}]]}]]}],{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+c:I[97367,["/design-boilerplate/_next/static/chunks/ff1a16fafef87110.js","/design-boilerplate/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+d:"$Sreact.suspense"
+f:I[97367,["/design-boilerplate/_next/static/chunks/ff1a16fafef87110.js","/design-boilerplate/_next/static/chunks/d2be314c3ece3fbe.js"],"ViewportBoundary"]
+11:I[97367,["/design-boilerplate/_next/static/chunks/ff1a16fafef87110.js","/design-boilerplate/_next/static/chunks/d2be314c3ece3fbe.js"],"MetadataBoundary"]
+7:["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":["$Lb",[["$","script","script-0",{"src":"/design-boilerplate/_next/static/chunks/376ae38163982843.js","async":true,"nonce":"$undefined"}]],["$","$Lc",null,{"children":["$","$d",null,{"name":"Next.MetadataOutlet","children":"$@e"}]}]]}]
+9:["$","$1","h",{"children":[null,["$","$Lf",null,{"children":"$L10"}],["$","div",null,{"hidden":true,"children":["$","$L11",null,{"children":["$","$d",null,{"name":"Next.Metadata","children":"$L12"}]}]}],null]}]
+13:I[44066,["/design-boilerplate/_next/static/chunks/a69d74d4ce90b882.js","/design-boilerplate/_next/static/chunks/1cd4e51f0540fd65.js","/design-boilerplate/_next/static/chunks/376ae38163982843.js"],"default"]
+14:T10a0,
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Button Component</title>
+    <link rel="stylesheet" href="/design-boilerplate/assets/css/colors.css">
+    <link rel="stylesheet" href="/design-boilerplate/assets/css/typography.css">
+    <link rel="stylesheet" href="/design-boilerplate/assets/css/button-base.css">
+    <link rel="stylesheet" href="/design-boilerplate/assets/css/button-standard.css">
+    <!-- Removed button-destructive.css link as per design correction -->
+    <link rel="stylesheet" href="/design-boilerplate/assets/css/button-split.css">
+    <link rel="stylesheet" href="/design-boilerplate/assets/css/icons.css">
+    <style>
+        
+
+        .showcase-container {
+            max-width: 1000px;
+            /* Wider for the 4-column matrix */
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+        }
+
+        h1 {
+            margin-bottom: 16px;
+            color: rgb(var(--text-primary));
+        }
+
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 24px;
+            font-size: 18px;
+            color: rgb(var(--text-secondary));
+            border-bottom: 1px solid rgb(var(--border-light));
+            padding-bottom: 8px;
+        }
+
+        .description {
+            margin-bottom: 32px;
+            color: rgb(var(--text-secondary));
+        }
+
+        .variant-grid {
+            display: grid;
+            grid-template-columns: 120px repeat(4, 1fr);
+            /* Label + 4 States */
+            gap: 24px;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .grid-header {
+            font-size: 12px;
+            font-weight: 600;
+            color: rgb(var(--text-tertiary));
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+
+        .row-label {
+            font-size: 14px;
+            font-weight: 500;
+            color: rgb(var(--text-secondary));
+        }
+
+        /* Helper to simulate states if JS isn't active */
+        .hover {
+            /* Styles handled by CSS classes */
+        }
+    </style>
+
+        <style>
+            .wrapper, .showcase-container { 
+                max-width: 100% !important; 
+                margin: 0 !important; 
+                padding: 0 !important; 
+                background: transparent !important; 
+                box-shadow: none !important;
+                border-radius: 0 !important;
+            }
+            .grid-container, .variant-grid, .lozenge-grid {
+                display: grid !important;
+                justify-items: start !important;
+                justify-content: start !important;
+                text-align: left !important;
+                width: fit-content !important;
+                min-width: 100% !important;
+            }
+            .grid-header, .row-label, .column-header, .cell, .lozenge-grid > div {
+                text-align: left !important;
+                justify-self: start !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: flex-start !important;
+            }
+            .section-title, .section-header {
+                margin-top: 48px !important;
+                margin-bottom: 24px !important;
+                border-bottom: 1px solid rgb(var(--border-primary)) !important;
+                padding-bottom: 12px !important;
+                text-align: left !important;
+                justify-content: flex-start !important;
+                width: 100% !important;
+                grid-column: 1 / -1 !important;
+                display: block !important;
+            }
+            .section:first-child .section-title, 
+            .section:first-child h1,
+            h1:first-child {
+                margin-top: 0 !important;
+            }
+            h1 {
+                font-size: 32px !important;
+                font-weight: var(--font-weight-bold) !important;
+                margin-bottom: 40px !important;
+                color: rgb(var(--text-primary)) !important;
+            }
+        </style>
+    15:T2386,
+    <div class="showcase-container">
+        <h1>Split Button</h1>
+        <p class="description">Combines a primary action with a dropdown menu. Supports Primary and Secondary styles in
+            Medium and Small sizes.</p>
+
+        <!-- Headers -->
+        <div class="variant-grid" style="margin-bottom: 12px; border-bottom: none;">
+            <div></div> <!-- Empty Corner -->
+            <div class="grid-header">Default</div>
+            <div class="grid-header">Hover</div>
+            <div class="grid-header">Active</div>
+            <div class="grid-header">Disabled</div>
+        </div>
+
+        <!-- Primary Style -->
+        <h2>Primary</h2>
+        <div class="variant-grid">
+            <!-- Medium -->
+            <div class="row-label">Medium</div>
+            <!-- Default -->
+            <div class="btn-group">
+                <button class="btn btn-md btn-primary">Label</button>
+                <button class="btn btn-md btn-primary btn-split-trigger">
+                    <span class="icon-svg"
+                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+            <!-- Hover -->
+            <div class="btn-group">
+                <button class="btn btn-md btn-primary hover">Label</button>
+                <button class="btn btn-md btn-primary btn-split-trigger hover">
+                    <span class="icon-svg"
+                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+            <!-- Active -->
+            <div class="btn-group">
+                <button class="btn btn-md btn-primary active">Label</button>
+                <button class="btn btn-md btn-primary btn-split-trigger active">
+                    <span class="icon-svg"
+                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+            <!-- Disabled -->
+            <div class="btn-group">
+                <button class="btn btn-md btn-primary" disabled>Label</button>
+                <button class="btn btn-md btn-primary btn-split-trigger" disabled>
+                    <span class="icon-svg"
+                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+
+            <!-- Small -->
+            <div class="row-label">Small</div>
+            <!-- Default -->
+            <div class="btn-group">
+                <button class="btn btn-sm btn-primary">Label</button>
+                <button class="btn btn-sm btn-primary btn-split-trigger">
+                    <span class="icon-svg"
+                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+            <!-- Hover -->
+            <div class="btn-group">
+                <button class="btn btn-sm btn-primary hover">Label</button>
+                <button class="btn btn-sm btn-primary btn-split-trigger hover">
+                    <span class="icon-svg"
+                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+            <!-- Active -->
+            <div class="btn-group">
+                <button class="btn btn-sm btn-primary active">Label</button>
+                <button class="btn btn-sm btn-primary btn-split-trigger active">
+                    <span class="icon-svg"
+                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+            <!-- Disabled -->
+            <div class="btn-group">
+                <button class="btn btn-sm btn-primary" disabled>Label</button>
+                <button class="btn btn-sm btn-primary btn-split-trigger" disabled>
+                    <span class="icon-svg"
+                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Secondary Style -->
+        <h2>Secondary</h2>
+        <div class="variant-grid">
+            <!-- Medium -->
+            <div class="row-label">Medium</div>
+            <!-- Default -->
+            <div class="btn-group">
+                <button class="btn btn-md btn-secondary">Label</button>
+                <button class="btn btn-md btn-secondary btn-split-trigger">
+                    <span class="icon-svg"
+                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+            <!-- Hover -->
+            <div class="btn-group">
+                <button class="btn btn-md btn-secondary hover">Label</button>
+                <button class="btn btn-md btn-secondary btn-split-trigger hover">
+                    <span class="icon-svg"
+                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+            <!-- Active -->
+            <div class="btn-group">
+                <button class="btn btn-md btn-secondary active">Label</button>
+                <button class="btn btn-md btn-secondary btn-split-trigger active">
+                    <span class="icon-svg"
+                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+            <!-- Disabled -->
+            <div class="btn-group">
+                <button class="btn btn-md btn-secondary" disabled>Label</button>
+                <button class="btn btn-md btn-secondary btn-split-trigger" disabled>
+                    <span class="icon-svg"
+                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+
+            <!-- Small -->
+            <div class="row-label">Small</div>
+            <!-- Default -->
+            <div class="btn-group">
+                <button class="btn btn-sm btn-secondary">Label</button>
+                <button class="btn btn-sm btn-secondary btn-split-trigger">
+                    <span class="icon-svg"
+                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+            <!-- Hover -->
+            <div class="btn-group">
+                <button class="btn btn-sm btn-secondary hover">Label</button>
+                <button class="btn btn-sm btn-secondary btn-split-trigger hover">
+                    <span class="icon-svg"
+                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+            <!-- Active -->
+            <div class="btn-group">
+                <button class="btn btn-sm btn-secondary active">Label</button>
+                <button class="btn btn-sm btn-secondary btn-split-trigger active">
+                    <span class="icon-svg"
+                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+            <!-- Disabled -->
+            <div class="btn-group">
+                <button class="btn btn-sm btn-secondary" disabled>Label</button>
+                <button class="btn btn-sm btn-secondary btn-split-trigger" disabled>
+                    <span class="icon-svg"
+                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+b:["$","div",null,{"style":{"background":"white","borderRadius":"16px","padding":"64px","boxShadow":"0 8px 48px rgba(0, 0, 0, 0.06)","border":"1px solid rgb(var(--border-primary))","minHeight":"calc(100vh - 80px)","maxWidth":"1280px","margin":"0 auto","position":"relative","overflow":"hidden"},"children":[["$","div",null,{"style":{"position":"absolute","top":0,"left":0,"right":0,"height":"4px","background":"linear-gradient(90deg, rgb(var(--accent-bg)) 0%, #BBA8F6 100%)","opacity":0.8}}],["$","$L13",null,{"headContent":"$14","bodyContent":"$15"}]]}]
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+e:null
+12:[["$","title","0",{"children":"Design Tokens"}],["$","meta","1",{"name":"description","content":"Design system tokens showcase"}]]

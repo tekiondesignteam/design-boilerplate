@@ -1,0 +1,70 @@
+/* Link Button Styles */
+.btn-link {
+    background-color: transparent;
+    border: none;
+    color: rgb(var(--accent-text));
+
+    /* Typography: Label Base Bold */
+    font-family: var(--font-family);
+    font-size: var(--text-label-base-size);
+    /* 14px */
+    line-height: var(--text-label-base-height);
+    /* 16px */
+    font-weight: var(--font-weight-semibold);
+    /* 600 */
+
+    /* Sizing */
+    height: var(--height-2);
+    border-radius: var(--radius-1);
+    /* var(--borderradius/1) */
+
+    /* Default Padding (Text Only) - 4px horizontal, 2px vertical from design */
+    padding: var(--space-1/2, 2px) var(--space-1);
+
+    /* Layout inherited from .btn (inline-flex, center, gap 8) */
+}
+
+/* Hover State */
+.btn-link:not(:disabled):hover,
+.btn-link.hover {
+    background-color: rgb(var(--accent-bg-light));
+    color: rgb(var(--accent-text-hover));
+    text-decoration: none;
+}
+
+/* Active State */
+.btn-link:not(:disabled):active,
+.btn-link:not(:disabled).active,
+.btn-link.active {
+    background-color: rgb(var(--accent-bg-light));
+    color: rgb(var(--accent-text-active));
+}
+
+/* Disabled State */
+.btn-link:disabled,
+.btn-link.disabled {
+    background-color: transparent;
+    color: rgb(var(--text-on-color-disabled));
+    cursor: not-allowed;
+}
+
+/* Icon Variants - Overriding padding */
+
+/* Icon Left: Padding Left 4px, Padding Right 8px */
+.btn-link.icon-left {
+    padding-left: var(--space-1);
+    padding-right: var(--space-2);
+}
+
+/* Icon Right: Padding Left 8px, Padding Right 4px */
+.btn-link.icon-right {
+    padding-left: var(--space-2);
+    padding-right: var(--space-1);
+}
+
+/* SCG Icon Fill - Inherit text color */
+.btn-link svg {
+    fill: currentColor;
+    width: var(--size-icon-4);
+    height: var(--size-icon-4);
+}

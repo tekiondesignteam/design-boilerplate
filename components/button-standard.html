@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Component Showcase - All Variants</title>
+    <link rel="stylesheet" href="../assets/css/colors.css">
+    <link rel="stylesheet" href="../assets/css/typography.css">
+    <link rel="stylesheet" href="../assets/css/button-base.css">
+    <link rel="stylesheet" href="../assets/css/button-standard.css">
+    <link rel="stylesheet" href="../assets/css/icons.css">
+    <style>
+        body {
+            padding: 60px;
+            background-color: rgb(var(--bg-muted));
+            font-family: var(--font-family);
+        }
+
+        .showcase-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            color: rgb(var(--text-primary));
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 32px;
+            color: rgb(var(--text-primary));
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: rgb(var(--border-primary));
+        }
+
+        .variant-grid {
+            display: grid;
+            grid-template-columns: 200px repeat(4, 1fr);
+            gap: 24px;
+            align-items: center;
+        }
+
+        .grid-header {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: rgb(var(--text-tertiary));
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgb(var(--border-light));
+        }
+
+        .row-label {
+            font-size: 14px;
+            font-weight: 500;
+            color: rgb(var(--text-secondary));
+            padding: 16px 0;
+        }
+
+        .button-cell {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 16px 0;
+        }
+
+        .icon-svg {
+            width: 16px;
+            height: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="showcase-container">
+        <h1>Button Component Variants</h1>
+
+        <!-- PRIMARY BUTTONS SECTION -->
+        <div class="section">
+            <h2 class="section-title">Primary Button</h2>
+
+            <div class="variant-grid">
+                <!-- Headers -->
+                <div class="grid-header">Variant & Size</div>
+                <div class="grid-header">Default</div>
+                <div class="grid-header">Hover</div>
+                <div class="grid-header">Active</div>
+                <div class="grid-header">Disabled</div>
+
+                <!-- Medium Label -->
+                <div class="row-label">Medium</div>
+                <div class="button-cell"><button class="btn btn-md btn-primary">Label</button></div>
+                <div class="button-cell"><button class="btn btn-md btn-primary hover">Label</button></div>
+                <div class="button-cell"><button class="btn btn-md btn-primary active">Label</button></div>
+                <div class="button-cell"><button class="btn btn-md btn-primary" disabled>Label</button></div>
+
+                <!-- Medium Left Icon -->
+                <div class="row-label">Medium Left Icon</div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-primary">
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-primary hover">
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-primary active">
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-primary" disabled>
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+
+                <!-- Medium Right Icon -->
+                <div class="row-label">Medium Right Icon</div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-primary">
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-primary hover">
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-primary active">
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-primary" disabled>
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+
+                <!-- Small Label -->
+                <div class="row-label">Small</div>
+                <div class="button-cell"><button class="btn btn-sm btn-primary">Label</button></div>
+                <div class="button-cell"><button class="btn btn-sm btn-primary hover">Label</button></div>
+                <div class="button-cell"><button class="btn btn-sm btn-primary active">Label</button></div>
+                <div class="button-cell"><button class="btn btn-sm btn-primary" disabled>Label</button></div>
+
+                <!-- Small Left Icon -->
+                <div class="row-label">Small Left Icon</div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-primary">
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-primary hover">
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-primary active">
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-primary" disabled>
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+
+                <!-- Small Right Icon -->
+                <div class="row-label">Small Right Icon</div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-primary">
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-primary hover">
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-primary active">
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-primary" disabled>
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECONDARY BUTTONS SECTION -->
+        <div class="section">
+            <h2 class="section-title">Secondary Button</h2>
+
+            <div class="variant-grid">
+                <!-- Headers -->
+                <div class="grid-header">Variant & Size</div>
+                <div class="grid-header">Default</div>
+                <div class="grid-header">Hover</div>
+                <div class="grid-header">Active</div>
+                <div class="grid-header">Disabled</div>
+
+                <!-- Medium Label -->
+                <div class="row-label">Medium</div>
+                <div class="button-cell"><button class="btn btn-md btn-secondary">Label</button></div>
+                <div class="button-cell"><button class="btn btn-md btn-secondary hover">Label</button></div>
+                <div class="button-cell"><button class="btn btn-md btn-secondary active">Label</button></div>
+                <div class="button-cell"><button class="btn btn-md btn-secondary" disabled>Label</button></div>
+
+                <!-- Medium Left Icon -->
+                <div class="row-label">Medium Left Icon</div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-secondary">
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-secondary hover">
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-secondary active">
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-secondary" disabled>
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+
+                <!-- Medium Right Icon -->
+                <div class="row-label">Medium Right Icon</div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-secondary">
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-secondary hover">
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-secondary active">
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-secondary" disabled>
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+
+                <!-- Small Label -->
+                <div class="row-label">Small</div>
+                <div class="button-cell"><button class="btn btn-sm btn-secondary">Label</button></div>
+                <div class="button-cell"><button class="btn btn-sm btn-secondary hover">Label</button></div>
+                <div class="button-cell"><button class="btn btn-sm btn-secondary active">Label</button></div>
+                <div class="button-cell"><button class="btn btn-sm btn-secondary" disabled>Label</button></div>
+
+                <!-- Small Left Icon -->
+                <div class="row-label">Small Left Icon</div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-secondary">
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-secondary hover">
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-secondary active">
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-secondary" disabled>
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+
+                <!-- Small Right Icon -->
+                <div class="row-label">Small Right Icon</div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-secondary">
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-secondary hover">
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-secondary active">
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-secondary" disabled>
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- TERTIARY BUTTONS SECTION -->
+        <div class="section">
+            <h2 class="section-title">Tertiary Button</h2>
+
+            <div class="variant-grid">
+                <!-- Headers -->
+                <div class="grid-header">Variant & Size</div>
+                <div class="grid-header">Default</div>
+                <div class="grid-header">Hover</div>
+                <div class="grid-header">Active</div>
+                <div class="grid-header">Disabled</div>
+
+                <!-- Medium Label -->
+                <div class="row-label">Medium</div>
+                <div class="button-cell"><button class="btn btn-md btn-tertiary">Label</button></div>
+                <div class="button-cell"><button class="btn btn-md btn-tertiary hover">Label</button></div>
+                <div class="button-cell"><button class="btn btn-md btn-tertiary active">Label</button></div>
+                <div class="button-cell"><button class="btn btn-md btn-tertiary" disabled>Label</button></div>
+
+                <!-- Medium Left Icon -->
+                <div class="row-label">Medium Left Icon</div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-tertiary">
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-tertiary hover">
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-tertiary active">
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-tertiary" disabled>
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+
+                <!-- Medium Right Icon -->
+                <div class="row-label">Medium Right Icon</div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-tertiary">
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-tertiary hover">
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-tertiary active">
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-md btn-tertiary" disabled>
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+
+                <!-- Small Label -->
+                <div class="row-label">Small</div>
+                <div class="button-cell"><button class="btn btn-sm btn-tertiary">Label</button></div>
+                <div class="button-cell"><button class="btn btn-sm btn-tertiary hover">Label</button></div>
+                <div class="button-cell"><button class="btn btn-sm btn-tertiary active">Label</button></div>
+                <div class="button-cell"><button class="btn btn-sm btn-tertiary" disabled>Label</button></div>
+
+                <!-- Small Left Icon -->
+                <div class="row-label">Small Left Icon</div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-tertiary">
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-tertiary hover">
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-tertiary active">
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-tertiary" disabled>
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                        Label
+                    </button>
+                </div>
+
+                <!-- Small Right Icon -->
+                <div class="row-label">Small Right Icon</div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-tertiary">
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-tertiary hover">
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-tertiary active">
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+                <div class="button-cell">
+                    <button class="btn btn-sm btn-tertiary" disabled>
+                        Label
+                        <span class="icon-svg" style="mask-image: url('../assets/icons/circle-outline.svg'); -webkit-mask-image: url('../assets/icons/circle-outline.svg');"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

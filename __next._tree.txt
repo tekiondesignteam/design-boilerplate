@@ -1,0 +1,6 @@
+:HL["/design-boilerplate/_next/static/chunks/97f89177a5d108c3.css","style"]
+:HL["/design-boilerplate/assets/css/colors.css","style"]
+:HL["/design-boilerplate/assets/css/typography.css","style"]
+:HL["/design-boilerplate/assets/css/icons.css","style"]
+:HL["/design-boilerplate/assets/css/tokens.css","style"]
+0:{"buildId":"Fn7HcbC8ZlBWzSxt9YEnP","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
