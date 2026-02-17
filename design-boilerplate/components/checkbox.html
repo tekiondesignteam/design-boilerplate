@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox Variants</title>
+    <link rel="stylesheet" href="../assets/css/colors.css">
+    <link rel="stylesheet" href="../assets/css/typography.css">
+    <link rel="stylesheet" href="checkbox.css">
+    <link rel="stylesheet" href="../assets/css/icons.css">
+    <style>
+        body {
+            padding: 60px;
+            background-color: rgb(var(--bg-muted));
+            font-family: var(--font-family);
+        }
+
+        .wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 40px 24px;
+            align-items: center;
+        }
+
+        .grid-header {
+            font-size: 14px;
+            font-weight: 600;
+            color: rgb(var(--text-secondary));
+            text-align: left;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgb(var(--border-light));
+        }
+
+        .row-label {
+            grid-column: 1 / -1;
+            margin-top: 20px;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: rgb(var(--text-tertiary));
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="heading-1">Checkbox Components</h1>
+
+        <div class="grid-container">
+            <!-- Column Headers -->
+            <div class="grid-header">Boxy Unchecked</div>
+            <div class="grid-header">Boxy Indeterminate</div>
+            <div class="grid-header">Boxy Checked</div>
+            <div class="grid-header">Circular Unchecked</div>
+            <div class="grid-header">Circular Checked</div>
+
+            <!-- ROW: Default -->
+            <div class="row-label">Default State</div>
+
+            <!-- Boxy Unchecked -->
+            <label class="checkbox">
+                <input type="checkbox">
+                <span class="checkbox-box">
+                    <span class="checkbox-icon icon-check icon-svg"
+                        style="mask-image: url('../assets/icons/checkbox-tick.svg'); -webkit-mask-image: url('../assets/icons/checkbox-tick.svg');"></span>
+                    <span class="checkbox-icon icon-minus icon-svg"
+                        style="mask-image: url('../assets/icons/minus.svg'); -webkit-mask-image: url('../assets/icons/minus.svg');"></span>
+                </span>
+                <span class="checkbox-label">Label</span>
+            </label>
+
+            <!-- Boxy Indeterminate -->
+            <label class="checkbox">
+                <input type="checkbox" class="indeterminate-checkbox">
+                <span class="checkbox-box">
+                    <span class="checkbox-icon icon-check icon-svg"
+                        style="mask-image: url('../assets/icons/checkbox-tick.svg'); -webkit-mask-image: url('../assets/icons/checkbox-tick.svg');"></span>
+                    <span class="checkbox-icon icon-minus icon-svg"
+                        style="mask-image: url('../assets/icons/minus.svg'); -webkit-mask-image: url('../assets/icons/minus.svg');"></span>
+                </span>
+                <span class="checkbox-label">Label</span>
+            </label>
+
+            <!-- Boxy Checked -->
+            <label class="checkbox">
+                <input type="checkbox" checked>
+                <span class="checkbox-box">
+                    <span class="checkbox-icon icon-check icon-svg"
+                        style="mask-image: url('../assets/icons/checkbox-tick.svg'); -webkit-mask-image: url('../assets/icons/checkbox-tick.svg');"></span>
+                    <span class="checkbox-icon icon-minus icon-svg"
+                        style="mask-image: url('../assets/icons/minus.svg'); -webkit-mask-image: url('../assets/icons/minus.svg');"></span>
+                </span>
+                <span class="checkbox-label">Label</span>
+            </label>
+
+            <!-- Circular Unchecked -->
+            <label class="checkbox circular">
+                <input type="checkbox">
+                <span class="checkbox-box">
+                    <span class="checkbox-icon icon-check icon-svg"
+                        style="mask-image: url('../assets/icons/checkbox-tick.svg'); -webkit-mask-image: url('../assets/icons/checkbox-tick.svg');"></span>
+                    <span class="checkbox-icon icon-minus icon-svg"
+                        style="mask-image: url('../assets/icons/minus.svg'); -webkit-mask-image: url('../assets/icons/minus.svg');"></span>
+                </span>
+                <span class="checkbox-label">Label</span>
+            </label>
+
+            <!-- Circular Checked -->
+            <label class="checkbox circular">
+                <input type="checkbox" checked>
+                <span class="checkbox-box">
+                    <span class="checkbox-icon icon-check icon-svg"
+                        style="mask-image: url('../assets/icons/checkbox-tick.svg'); -webkit-mask-image: url('../assets/icons/checkbox-tick.svg');"></span>
+                    <span class="checkbox-icon icon-minus icon-svg"
+                        style="mask-image: url('../assets/icons/minus.svg'); -webkit-mask-image: url('../assets/icons/minus.svg');"></span>
+                </span>
+                <span class="checkbox-label">Label</span>
+            </label>
+
+            <!-- ROW: Disabled -->
+            <div class="row-label">Disabled State</div>
+
+            <!-- Boxy Unchecked Disabled -->
+            <label class="checkbox disabled">
+                <input type="checkbox" disabled>
+                <span class="checkbox-box">
+                    <span class="checkbox-icon icon-check icon-svg"
+                        style="mask-image: url('../assets/icons/checkbox-tick.svg'); -webkit-mask-image: url('../assets/icons/checkbox-tick.svg');"></span>
+                    <span class="checkbox-icon icon-minus icon-svg"
+                        style="mask-image: url('../assets/icons/minus.svg'); -webkit-mask-image: url('../assets/icons/minus.svg');"></span>
+                </span>
+                <span class="checkbox-label">Label</span>
+            </label>
+
+            <!-- Boxy Indeterminate Disabled -->
+            <label class="checkbox disabled">
+                <input type="checkbox" class="indeterminate-checkbox" disabled>
+                <span class="checkbox-box">
+                    <span class="checkbox-icon icon-check icon-svg"
+                        style="mask-image: url('../assets/icons/checkbox-tick.svg'); -webkit-mask-image: url('../assets/icons/checkbox-tick.svg');"></span>
+                    <span class="checkbox-icon icon-minus icon-svg"
+                        style="mask-image: url('../assets/icons/minus.svg'); -webkit-mask-image: url('../assets/icons/minus.svg');"></span>
+                </span>
+                <span class="checkbox-label">Label</span>
+            </label>
+
+            <!-- Boxy Checked Disabled -->
+            <label class="checkbox disabled">
+                <input type="checkbox" checked disabled>
+                <span class="checkbox-box">
+                    <span class="checkbox-icon icon-check icon-svg"
+                        style="mask-image: url('../assets/icons/checkbox-tick.svg'); -webkit-mask-image: url('../assets/icons/checkbox-tick.svg');"></span>
+                    <span class="checkbox-icon icon-minus icon-svg"
+                        style="mask-image: url('../assets/icons/minus.svg'); -webkit-mask-image: url('../assets/icons/minus.svg');"></span>
+                </span>
+                <span class="checkbox-label">Label</span>
+            </label>
+
+            <!-- Circular Unchecked Disabled -->
+            <label class="checkbox circular disabled">
+                <input type="checkbox" disabled>
+                <span class="checkbox-box">
+                    <span class="checkbox-icon icon-check icon-svg"
+                        style="mask-image: url('../assets/icons/checkbox-tick.svg'); -webkit-mask-image: url('../assets/icons/checkbox-tick.svg');"></span>
+                    <span class="checkbox-icon icon-minus icon-svg"
+                        style="mask-image: url('../assets/icons/minus.svg'); -webkit-mask-image: url('../assets/icons/minus.svg');"></span>
+                </span>
+                <span class="checkbox-label">Label</span>
+            </label>
+
+            <!-- Circular Checked Disabled -->
+            <label class="checkbox circular disabled">
+                <input type="checkbox" checked disabled>
+                <span class="checkbox-box">
+                    <span class="checkbox-icon icon-check icon-svg"
+                        style="mask-image: url('../assets/icons/checkbox-tick.svg'); -webkit-mask-image: url('../assets/icons/checkbox-tick.svg');"></span>
+                    <span class="checkbox-icon icon-minus icon-svg"
+                        style="mask-image: url('../assets/icons/minus.svg'); -webkit-mask-image: url('../assets/icons/minus.svg');"></span>
+                </span>
+                <span class="checkbox-label">Label</span>
+            </label>
+
+        </div>
+    </div>
+
+    <script>
+        // Init indeterminate state
+        document.querySelectorAll('.indeterminate-checkbox').forEach(input => {
+            input.indeterminate = true;
+        });
+    </script>
+</body>
+
+</html>

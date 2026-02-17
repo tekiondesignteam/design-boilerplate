@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button Variants</title>
+    <link rel="stylesheet" href="../assets/css/colors.css">
+    <link rel="stylesheet" href="../assets/css/typography.css">
+    <link rel="stylesheet" href="radio.css">
+    <style>
+        body {
+            padding: 60px;
+            background-color: rgb(var(--bg-muted));
+            font-family: var(--font-family);
+        }
+
+        .wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px 24px;
+            align-items: center;
+        }
+
+        .grid-header {
+            font-size: 14px;
+            font-weight: 600;
+            color: rgb(var(--text-secondary));
+            text-align: left;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgb(var(--border-light));
+        }
+
+        .row-label {
+            grid-column: 1 / -1;
+            margin-top: 20px;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: rgb(var(--text-tertiary));
+            font-weight: 600;
+        }
+
+        /* Demo helper for group behavior */
+        .demo-group {
+            display: flex;
+            gap: 24px;
+            margin-top: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="heading-1">Radio Button Components</h1>
+
+        <div class="grid-container">
+            <!-- Column Headers -->
+            <div class="grid-header">Unchecked</div>
+            <div class="grid-header">Checked</div>
+            <div class="grid-header">Disabled Unchecked</div>
+            <div class="grid-header">Disabled Checked</div>
+
+            <!-- ROW: Default -->
+            <div class="row-label">States</div>
+
+            <!-- Unchecked -->
+            <label class="radio">
+                <input type="radio" name="demo-1" value="1">
+                <span class="radio-circle"></span>
+                <span class="radio-label">Label</span>
+            </label>
+
+            <!-- Checked -->
+            <label class="radio">
+                <input type="radio" name="demo-1" value="2" checked>
+                <span class="radio-circle"></span>
+                <span class="radio-label">Label</span>
+            </label>
+
+            <!-- Disabled Unchecked -->
+            <label class="radio disabled">
+                <input type="radio" name="demo-disabled-off" disabled>
+                <span class="radio-circle"></span>
+                <span class="radio-label">Label</span>
+            </label>
+
+            <!-- Disabled Checked -->
+            <label class="radio disabled">
+                <input type="radio" name="demo-disabled-on" checked disabled>
+                <span class="radio-circle"></span>
+                <span class="radio-label">Label</span>
+            </label>
+
+            <!-- ROW: Interactive Group Demo -->
+            <div class="row-label">Interactive Group Demo</div>
+
+            <div style="grid-column: 1 / -1;">
+                <p class="paragraph-base" style="margin-bottom: 12px;">Select an option:</p>
+                <div class="demo-group">
+                    <label class="radio">
+                        <input type="radio" name="group1" value="option1">
+                        <span class="radio-circle"></span>
+                        <span class="radio-label">Option 1</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="group1" value="option2" checked>
+                        <span class="radio-circle"></span>
+                        <span class="radio-label">Option 2</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="group1" value="option3">
+                        <span class="radio-circle"></span>
+                        <span class="radio-label">Option 3</span>
+                    </label>
+                    <label class="radio disabled">
+                        <input type="radio" name="group1" value="option4" disabled>
+                        <span class="radio-circle"></span>
+                        <span class="radio-label">Disabled Option</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

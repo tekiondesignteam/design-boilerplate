@@ -1,0 +1,59 @@
+/* Split Button Specific Styles */
+.btn-group {
+    display: inline-flex;
+    vertical-align: middle;
+    isolation: isolate;
+}
+
+.btn-group .btn {
+    border-radius: 0;
+    position: relative;
+}
+
+/* Restore outer corners */
+.btn-group .btn:first-child {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.btn-group .btn:last-child {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+/* Primary Split (Filled Buttons) */
+.btn-group .btn-primary:first-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Secondary Split (Bordered Buttons) */
+/* Overlap borders so we don't get double thickness */
+.btn-group .btn-secondary+.btn-secondary {
+    margin-left: -1px;
+}
+
+/* Ensure hovered/active element sits on top of the sibling to show full border */
+.btn-group .btn-secondary:hover,
+.btn-group .btn-secondary:active,
+.btn-group .btn-secondary.hover,
+.btn-group .btn-secondary.active,
+.btn-group .btn-secondary:focus {
+    z-index: 2;
+}
+
+/* Trigger Button Sizing */
+/* Adjust padding to be square-ish or compact for the icon */
+.btn-md.btn-split-trigger {
+    padding: 0 8px;
+}
+
+.btn-sm.btn-split-trigger {
+    padding: 0 6px;
+}
+
+/* Disabled State Adjustments */
+/* Ensure separator remains visible but subtle on disabled filled buttons */
+.btn-group .btn-primary:disabled:first-child,
+.btn-group .btn-primary.disabled:first-child {
+    border-right-color: rgb(var(--border-on-color-disabled));
+}
