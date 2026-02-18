@@ -11,7 +11,7 @@ export default function SidebarNav({ components }) {
             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 {components.map((comp) => {
                     const href = `/components/${comp.slug}`;
-                    const isActive = pathname === href;
+                    const isActive = pathname.replace(/\/$/, '') === href;
 
                     return (
                         <li key={comp.slug} style={{ marginBottom: '4px' }}>

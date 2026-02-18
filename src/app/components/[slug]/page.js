@@ -28,13 +28,19 @@ function processHtml(slug) {
     const headMatch = htmlContent.match(/<head[^>]*>([\s\S]*)<\/head>/i);
     let headContent = headMatch ? headMatch[1] : '';
 
-    // Fix relative paths in headContent: ../assets/ -> /design-boilerplate/assets/
-    headContent = headContent.replace(/\.\.\/assets\//g, '/design-boilerplate/assets/');
+    // Fix relative paths in headContent: ../assets/ -> ../../assets/
+    // Since we are at /design-boilerplate/components/[slug]/, we need to go up twice to reach assets
+    headContent = headContent.replace(/\.\.\/assets\//g, '../../assets/');
+
+    // Fix local component CSS references (e.g., href="checkbox.css")
+    // These were copied to public/assets/css/
+    headContent = headContent.replace(/href="([^"\/]+\.css)"/g, 'href="../../assets/css/$1"');
 
     // Normalize styles
     headContent = headContent.replace(/body\s*{[\s\S]*?}/gi, '');
     headContent = headContent.replace(/html\s*{[\s\S]*?}/gi, '');
 
+    // ... (rest of style block) ...
     headContent += `
         <style>
             .wrapper, .showcase-container { 
@@ -90,7 +96,8 @@ function processHtml(slug) {
     let bodyContent = bodyMatch ? bodyMatch[1] : htmlContent;
 
     // Fix relative paths in bodyContent
-    bodyContent = bodyContent.replace(/\.\.\/assets\//g, '/design-boilerplate/assets/');
+    // More robustly catch ../assets/ even in style attributes/URLs
+    bodyContent = bodyContent.replace(/\.\.\/assets\//g, '../../assets/');
 
     return { headContent, bodyContent };
 }

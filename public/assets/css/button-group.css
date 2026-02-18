@@ -1,0 +1,153 @@
+/* Button Group Component */
+
+/* Container */
+.button-group {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+/* Button Item Base */
+.button-group-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--height-6);
+    /* 40px - Medium Size */
+    padding: 0 var(--space-4);
+
+    font-family: var(--font-family);
+    font-size: var(--text-paragraph-base-size, 14px);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--text-paragraph-base-height, 20px);
+    white-space: nowrap;
+
+    background-color: rgb(var(--bg-primary));
+    color: rgb(var(--text-secondary));
+    border: var(--border-width-1) solid rgb(var(--border-primary));
+
+    cursor: pointer;
+    transition: all var(--transition-base) var(--ease-in-out);
+    position: relative;
+    margin-left: -1px;
+    /* Collapse borders */
+    gap: var(--space-2);
+    /* 8px - Spacing between icon/label/badge */
+}
+
+/* Typography override for label inside */
+.button-group-item span {
+    font-size: var(--font-size-4);
+    line-height: var(--font-size-5);
+}
+
+/* First and Last Radius */
+.button-group-item:first-child {
+    border-top-left-radius: var(--radius-1);
+    border-bottom-left-radius: var(--radius-1);
+    margin-left: 0;
+}
+
+.button-group-item:last-child {
+    border-top-right-radius: var(--radius-1);
+    border-bottom-right-radius: var(--radius-1);
+}
+
+/* Hover State */
+.button-group-item:hover:not(:disabled):not(.selected) {
+    background-color: rgb(var(--bg-hover));
+    color: rgb(var(--accent-text));
+    border-color: rgb(var(--accent-border));
+    z-index: 1;
+}
+
+/* Active/Selected State */
+.button-group-item.selected {
+    background-color: rgb(var(--accent-bg));
+    color: rgb(var(--text-on-color));
+    border-color: rgb(var(--accent-border));
+    z-index: 2;
+}
+
+/* Disabled State */
+.button-group-item:disabled {
+    background-color: rgb(var(--bg-disabled));
+    color: rgb(var(--text-disabled));
+    border-color: rgb(var(--border-disabled));
+    cursor: not-allowed;
+    z-index: 0;
+}
+
+/* Focus State (Accessibility) */
+.button-group-item:focus-visible {
+    outline: 2px solid rgb(var(--accent-border));
+    outline-offset: 2px;
+    z-index: 3;
+}
+
+/* --- Variants --- */
+
+/* Secondary Variant (Gray Background) */
+.button-group-secondary .button-group-item {
+    background-color: rgb(var(--bg-secondary));
+    border-color: transparent;
+    /* Often secondary groups effectively have no border or match bg */
+}
+
+.button-group-secondary .button-group-item:hover:not(:disabled):not(.selected) {
+    background-color: rgb(var(--bg-hover));
+    color: rgb(var(--accent-text));
+    border-color: rgb(var(--accent-border));
+}
+
+.button-group-secondary .button-group-item.selected {
+    background-color: rgb(var(--accent-bg));
+    color: rgb(var(--text-on-color));
+    border-color: rgb(var(--accent-border));
+}
+
+/* --- Sizes --- */
+
+/* Small Size */
+.button-group.small .button-group-item {
+    height: var(--height-4);
+    padding: 0 var(--space-3);
+    font-size: var(--font-size-2);
+}
+
+/* --- Content Elements --- */
+
+/* Icon */
+.button-group-item svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+/* Badge */
+.button-group-item .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 4px;
+    border-radius: 10px;
+    background-color: rgb(var(--bg-tertiary));
+    /* Default badge bg */
+    color: rgb(var(--text-primary));
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+/* Badge colors adapt to selection */
+.button-group-item.selected .badge {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(var(--text-on-color));
+}
+
+.button-group-item:hover:not(:disabled):not(.selected) .badge {
+    background-color: rgb(var(--accent-bg-light));
+    /* Subtle shift */
+    color: rgb(var(--accent-text));
+}

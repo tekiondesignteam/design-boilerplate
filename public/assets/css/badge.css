@@ -1,0 +1,78 @@
+/* Badge Component */
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--height-0);
+    min-width: var(--height-0);
+    padding: 0 var(--space-1);
+    border-radius: var(--radius-badge);
+
+    /* Typography: label-small-bold */
+    font-family: var(--font-family);
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--height-0);
+
+    white-space: nowrap;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Single character optimization - ensure it stays circular if possible */
+.badge:empty::before {
+    content: "\00a0";
+    /* Non-breaking space for empty badges if used as dots */
+}
+
+/* Variants */
+
+/* Default / Accent (Primary Blue) */
+.badge-accent {
+    background-color: rgb(var(--accent-bg));
+    color: rgb(var(--text-on-color));
+}
+
+/* Neutral / Gray */
+.badge-neutral {
+    background-color: rgb(var(--bg-tertiary));
+    color: rgb(var(--text-primary));
+}
+
+/* Negative / Red */
+.badge-negative {
+    background-color: rgb(var(--bg-negative));
+    color: rgb(var(--text-on-color));
+}
+
+/* Positive / Green */
+.badge-positive {
+    background-color: rgb(var(--positive-bg));
+    color: rgb(var(--text-on-color));
+}
+
+/* Warning / Yellow */
+.badge-warning {
+    background-color: rgb(var(--warning-bg));
+    color: rgb(var(--text-on-color-inverse));
+    /* Usually dark text on yellow */
+}
+
+/* Ghost / Outline Variant (Self-initiated common pattern) */
+.badge-outline {
+    background-color: transparent;
+    border: var(--border-width-1) solid rgb(var(--border-primary));
+    color: rgb(var(--text-secondary));
+    line-height: calc(var(--height-0) - 2px);
+    /* Adjust for border */
+}
+
+/* Sizes (Optional, but good to have) */
+.badge-large {
+    height: var(--height-1);
+    min-width: var(--height-1);
+    padding: 0 var(--space-2);
+    font-size: var(--font-size-3);
+    line-height: var(--height-1);
+}
