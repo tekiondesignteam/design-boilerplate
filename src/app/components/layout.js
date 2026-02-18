@@ -34,7 +34,7 @@ export default function ComponentsLayout({ children }) {
                 zIndex: 100
             }}>
                 <div style={{ marginBottom: '32px', padding: '0 12px' }}>
-                    <Link href="../" style={{
+                    <Link href="/" style={{
                         textDecoration: 'none',
                         fontSize: '12px',
                         fontWeight: 'var(--font-weight-semibold)',
