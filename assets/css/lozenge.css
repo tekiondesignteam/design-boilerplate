@@ -1,0 +1,228 @@
+/* Lozenge Component */
+
+.lozenge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    white-space: nowrap;
+    gap: var(--space-1);
+    /* Space between text and icon */
+
+    /* Typography defaults */
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-semibold);
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+/* --- Sizes --- */
+
+/* Small Size */
+.lozenge-small {
+    height: var(--height-0);
+    padding: 0 var(--space-1);
+    font-size: var(--font-size-1);
+    line-height: var(--height-0);
+    gap: var(--space-1/2, 2px);
+}
+
+/* Large Size */
+.lozenge-large {
+    height: var(--height-2);
+    padding: 0 var(--space-2);
+    font-size: var(--font-size-2);
+    line-height: var(--height-2);
+    gap: var(--space-1);
+}
+
+/* --- Type / Shape --- */
+
+/* Rounded / Pill (Default) */
+.lozenge-pill {
+    border-radius: var(--radius-10);
+}
+
+/* Square */
+.lozenge-square {
+    border-radius: var(--radius-2);
+}
+
+/* --- Styles & Colors --- */
+
+/* 1. Solid Styles */
+
+/* Accent (Blue) */
+.lozenge-solid-accent {
+    background-color: rgb(var(--accent-bg));
+    color: rgb(var(--text-on-color));
+}
+
+/* Negative (Red) */
+.lozenge-solid-negative {
+    background-color: rgb(var(--bg-negative));
+    color: rgb(var(--text-on-color));
+}
+
+/* Warning (Yellow) */
+.lozenge-solid-warning {
+    background-color: rgb(var(--warning-bg));
+    color: rgb(var(--text-on-color-inverse));
+}
+
+/* Positive (Green) */
+.lozenge-solid-positive {
+    background-color: rgb(var(--positive-bg));
+    color: rgb(var(--text-on-color));
+}
+
+/* Dark (Slate/Dark Grey) */
+.lozenge-solid-dark {
+    background-color: rgb(var(--always-dark-bg-primary));
+    color: rgb(var(--text-on-color));
+}
+
+/* Neutral (Light Grey) */
+.lozenge-solid-neutral {
+    background-color: rgb(var(--bg-tertiary));
+    color: rgb(var(--text-primary));
+}
+
+
+/* 2. Outline Styles */
+/* Note: Outline usually uses currentcolor or specified border color with matching text */
+
+/* Accent Outline */
+.lozenge-outline-accent {
+    background-color: transparent;
+    border: var(--border-width-1) solid rgb(var(--accent-border));
+    color: rgb(var(--accent-text));
+}
+
+.lozenge-outline-accent.lozenge-small {
+    line-height: calc(var(--height-0) - 2px);
+}
+
+.lozenge-outline-accent.lozenge-large {
+    line-height: calc(var(--height-2) - 2px);
+}
+
+
+/* Negative Outline */
+.lozenge-outline-negative {
+    background-color: transparent;
+    border: var(--border-width-1) solid rgb(var(--negative-border));
+    color: rgb(var(--negative-text));
+}
+
+.lozenge-outline-negative.lozenge-small {
+    line-height: calc(var(--height-0) - 2px);
+}
+
+.lozenge-outline-negative.lozenge-large {
+    line-height: calc(var(--height-2) - 2px);
+}
+
+
+/* Warning Outline */
+.lozenge-outline-warning {
+    background-color: transparent;
+    border: var(--border-width-1) solid rgb(var(--warning-border));
+    color: rgb(var(--warning-text));
+}
+
+.lozenge-outline-warning.lozenge-small {
+    line-height: calc(var(--height-0) - 2px);
+}
+
+.lozenge-outline-warning.lozenge-large {
+    line-height: calc(var(--height-2) - 2px);
+}
+
+
+/* Positive Outline */
+.lozenge-outline-positive {
+    background-color: transparent;
+    border: var(--border-width-1) solid rgb(var(--positive-border));
+    color: rgb(var(--positive-text));
+}
+
+.lozenge-outline-positive.lozenge-small {
+    line-height: calc(var(--height-0) - 2px);
+}
+
+.lozenge-outline-positive.lozenge-large {
+    line-height: calc(var(--height-2) - 2px);
+}
+
+
+/* Dark Outline */
+.lozenge-outline-dark {
+    background-color: transparent;
+    border: var(--border-width-1) solid rgb(var(--always-dark-border));
+    color: rgb(var(--always-dark-bg-primary));
+}
+
+.lozenge-outline-dark.lozenge-small {
+    line-height: calc(var(--height-0) - 2px);
+}
+
+.lozenge-outline-dark.lozenge-large {
+    line-height: calc(var(--height-2) - 2px);
+}
+
+
+/* Neutral Outline */
+.lozenge-outline-neutral {
+    background-color: transparent;
+    border: var(--border-width-1) solid rgb(var(--border-dark));
+    color: rgb(var(--text-primary));
+}
+
+.lozenge-outline-neutral.lozenge-small {
+    line-height: calc(var(--height-0) - 2px);
+}
+
+.lozenge-outline-neutral.lozenge-large {
+    line-height: calc(var(--height-2) - 2px);
+}
+
+/* --- Close Icon --- */
+.lozenge-close {
+    width: 8px;
+    height: 8px;
+    background-color: currentColor;
+    mask-image: url('../icons/close.svg');
+    -webkit-mask-image: url('../icons/close.svg');
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.lozenge-close:hover {
+    opacity: 1;
+}
+
+/* Adjust icon size for large lozenge */
+.lozenge-large .lozenge-close {
+    width: 10px;
+    height: 10px;
+}
+
+/* Adjust margins/padding when close icon is present */
+/* For Pill shape, we might want a bit more padding on the right if there's a close icon */
+.lozenge-pill:has(.lozenge-close) {
+    padding-right: 4px;
+    /* Ensure 4px on right */
+}
+
+.lozenge-pill.lozenge-large:has(.lozenge-close) {
+    padding-right: 6px;
+}

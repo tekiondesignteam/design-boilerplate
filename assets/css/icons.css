@@ -5,13 +5,22 @@
     justify-content: center;
     width: var(--size-icon-4);
     height: var(--size-icon-4);
-    background-color: currentColor;
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: contain;
     -webkit-mask-position: center;
+}
+
+/* For mask-based icons (span/div) */
+span.icon-svg, div.icon-svg {
+    background-color: currentColor;
+}
+
+/* For inline SVG icons */
+svg.icon-svg {
+    background-color: transparent;
 }
 
 /* Base sizing for different button sizes */

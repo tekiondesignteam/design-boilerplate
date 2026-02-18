@@ -1,18 +1,18 @@
 1:"$Sreact.fragment"
-2:I[44066,["/design-boilerplate/_next/static/chunks/a69d74d4ce90b882.js","/design-boilerplate/_next/static/chunks/1cd4e51f0540fd65.js","/design-boilerplate/_next/static/chunks/376ae38163982843.js"],"default"]
+2:I[44066,["/design-boilerplate/_next/static/chunks/a69d74d4ce90b882.js","/design-boilerplate/_next/static/chunks/ce7f9980d2c434b8.js","/design-boilerplate/_next/static/chunks/376ae38163982843.js"],"default"]
 7:I[97367,["/design-boilerplate/_next/static/chunks/ff1a16fafef87110.js","/design-boilerplate/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
 8:"$Sreact.suspense"
-3:T10a0,
+3:T104c,
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Split Button Component</title>
-    <link rel="stylesheet" href="/design-boilerplate/assets/css/colors.css">
-    <link rel="stylesheet" href="/design-boilerplate/assets/css/typography.css">
-    <link rel="stylesheet" href="/design-boilerplate/assets/css/button-base.css">
-    <link rel="stylesheet" href="/design-boilerplate/assets/css/button-standard.css">
+    <link rel="stylesheet" href="../../assets/css/colors.css">
+    <link rel="stylesheet" href="../../assets/css/typography.css">
+    <link rel="stylesheet" href="../../assets/css/button-base.css">
+    <link rel="stylesheet" href="../../assets/css/button-standard.css">
     <!-- Removed button-destructive.css link as per design correction -->
-    <link rel="stylesheet" href="/design-boilerplate/assets/css/button-split.css">
-    <link rel="stylesheet" href="/design-boilerplate/assets/css/icons.css">
+    <link rel="stylesheet" href="../../assets/css/button-split.css">
+    <link rel="stylesheet" href="../../assets/css/icons.css">
     <style>
         
 
@@ -122,7 +122,7 @@
                 color: rgb(var(--text-primary)) !important;
             }
         </style>
-    4:T2386,
+    4:T21c6,
     <div class="showcase-container">
         <h1>Split Button</h1>
         <p class="description">Combines a primary action with a dropdown menu. Supports Primary and Secondary styles in
@@ -147,7 +147,7 @@
                 <button class="btn btn-md btn-primary">Label</button>
                 <button class="btn btn-md btn-primary btn-split-trigger">
                     <span class="icon-svg"
-                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                        style="mask-image: url('../../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../../assets/icons/chevron-down.svg');"></span>
                 </button>
             </div>
             <!-- Hover -->
@@ -155,7 +155,7 @@
                 <button class="btn btn-md btn-primary hover">Label</button>
                 <button class="btn btn-md btn-primary btn-split-trigger hover">
                     <span class="icon-svg"
-                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                        style="mask-image: url('../../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../../assets/icons/chevron-down.svg');"></span>
                 </button>
             </div>
             <!-- Active -->
@@ -163,7 +163,7 @@
                 <button class="btn btn-md btn-primary active">Label</button>
                 <button class="btn btn-md btn-primary btn-split-trigger active">
                     <span class="icon-svg"
-                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                        style="mask-image: url('../../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../../assets/icons/chevron-down.svg');"></span>
                 </button>
             </div>
             <!-- Disabled -->
@@ -171,7 +171,7 @@
                 <button class="btn btn-md btn-primary" disabled>Label</button>
                 <button class="btn btn-md btn-primary btn-split-trigger" disabled>
                     <span class="icon-svg"
-                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                        style="mask-image: url('../../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../../assets/icons/chevron-down.svg');"></span>
                 </button>
             </div>
 
@@ -182,7 +182,7 @@
                 <button class="btn btn-sm btn-primary">Label</button>
                 <button class="btn btn-sm btn-primary btn-split-trigger">
                     <span class="icon-svg"
-                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                        style="mask-image: url('../../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../../assets/icons/chevron-down.svg');"></span>
                 </button>
             </div>
             <!-- Hover -->
@@ -190,7 +190,7 @@
                 <button class="btn btn-sm btn-primary hover">Label</button>
                 <button class="btn btn-sm btn-primary btn-split-trigger hover">
                     <span class="icon-svg"
-                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                        style="mask-image: url('../../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../../assets/icons/chevron-down.svg');"></span>
                 </button>
             </div>
             <!-- Active -->
@@ -198,7 +198,7 @@
                 <button class="btn btn-sm btn-primary active">Label</button>
                 <button class="btn btn-sm btn-primary btn-split-trigger active">
                     <span class="icon-svg"
-                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                        style="mask-image: url('../../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../../assets/icons/chevron-down.svg');"></span>
                 </button>
             </div>
             <!-- Disabled -->
@@ -206,7 +206,7 @@
                 <button class="btn btn-sm btn-primary" disabled>Label</button>
                 <button class="btn btn-sm btn-primary btn-split-trigger" disabled>
                     <span class="icon-svg"
-                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                        style="mask-image: url('../../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../../assets/icons/chevron-down.svg');"></span>
                 </button>
             </div>
         </div>
@@ -221,7 +221,7 @@
                 <button class="btn btn-md btn-secondary">Label</button>
                 <button class="btn btn-md btn-secondary btn-split-trigger">
                     <span class="icon-svg"
-                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                        style="mask-image: url('../../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../../assets/icons/chevron-down.svg');"></span>
                 </button>
             </div>
             <!-- Hover -->
@@ -229,7 +229,7 @@
                 <button class="btn btn-md btn-secondary hover">Label</button>
                 <button class="btn btn-md btn-secondary btn-split-trigger hover">
                     <span class="icon-svg"
-                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                        style="mask-image: url('../../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../../assets/icons/chevron-down.svg');"></span>
                 </button>
             </div>
             <!-- Active -->
@@ -237,7 +237,7 @@
                 <button class="btn btn-md btn-secondary active">Label</button>
                 <button class="btn btn-md btn-secondary btn-split-trigger active">
                     <span class="icon-svg"
-                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                        style="mask-image: url('../../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../../assets/icons/chevron-down.svg');"></span>
                 </button>
             </div>
             <!-- Disabled -->
@@ -245,7 +245,7 @@
                 <button class="btn btn-md btn-secondary" disabled>Label</button>
                 <button class="btn btn-md btn-secondary btn-split-trigger" disabled>
                     <span class="icon-svg"
-                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                        style="mask-image: url('../../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../../assets/icons/chevron-down.svg');"></span>
                 </button>
             </div>
 
@@ -256,7 +256,7 @@
                 <button class="btn btn-sm btn-secondary">Label</button>
                 <button class="btn btn-sm btn-secondary btn-split-trigger">
                     <span class="icon-svg"
-                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                        style="mask-image: url('../../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../../assets/icons/chevron-down.svg');"></span>
                 </button>
             </div>
             <!-- Hover -->
@@ -264,7 +264,7 @@
                 <button class="btn btn-sm btn-secondary hover">Label</button>
                 <button class="btn btn-sm btn-secondary btn-split-trigger hover">
                     <span class="icon-svg"
-                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                        style="mask-image: url('../../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../../assets/icons/chevron-down.svg');"></span>
                 </button>
             </div>
             <!-- Active -->
@@ -272,7 +272,7 @@
                 <button class="btn btn-sm btn-secondary active">Label</button>
                 <button class="btn btn-sm btn-secondary btn-split-trigger active">
                     <span class="icon-svg"
-                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                        style="mask-image: url('../../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../../assets/icons/chevron-down.svg');"></span>
                 </button>
             </div>
             <!-- Disabled -->
@@ -280,13 +280,13 @@
                 <button class="btn btn-sm btn-secondary" disabled>Label</button>
                 <button class="btn btn-sm btn-secondary btn-split-trigger" disabled>
                     <span class="icon-svg"
-                        style="mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg'); -webkit-mask-image: url('/design-boilerplate/assets/icons/chevron-down.svg');"></span>
+                        style="mask-image: url('../../assets/icons/chevron-down.svg'); -webkit-mask-image: url('../../assets/icons/chevron-down.svg');"></span>
                 </button>
             </div>
         </div>
 
     </div>
-0:{"buildId":"Fn7HcbC8ZlBWzSxt9YEnP","rsc":["$","$1","c",{"children":[["$","div",null,{"style":{"background":"white","borderRadius":"16px","padding":"64px","boxShadow":"0 8px 48px rgba(0, 0, 0, 0.06)","border":"1px solid rgb(var(--border-primary))","minHeight":"calc(100vh - 80px)","maxWidth":"1280px","margin":"0 auto","position":"relative","overflow":"hidden"},"children":[["$","div",null,{"style":{"position":"absolute","top":0,"left":0,"right":0,"height":"4px","background":"linear-gradient(90deg, rgb(var(--accent-bg)) 0%, #BBA8F6 100%)","opacity":0.8}}],["$","$L2",null,{"headContent":"$3","bodyContent":"$4"}]]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
+0:{"buildId":"swqrTMj_pNbk1q7ylGiWp","rsc":["$","$1","c",{"children":[["$","div",null,{"style":{"background":"white","borderRadius":"16px","padding":"64px","boxShadow":"0 8px 48px rgba(0, 0, 0, 0.06)","border":"1px solid rgb(var(--border-primary))","minHeight":"calc(100vh - 80px)","maxWidth":"1280px","margin":"0 auto","position":"relative","overflow":"hidden"},"children":[["$","div",null,{"style":{"position":"absolute","top":0,"left":0,"right":0,"height":"4px","background":"linear-gradient(90deg, rgb(var(--accent-bg)) 0%, #BBA8F6 100%)","opacity":0.8}}],["$","$L2",null,{"headContent":"$3","bodyContent":"$4"}]]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
 5:["$","script","script-0",{"src":"/design-boilerplate/_next/static/chunks/376ae38163982843.js","async":true}]
 6:["$","$L7",null,{"children":["$","$8",null,{"name":"Next.MetadataOutlet","children":"$@9"}]}]
 9:null
