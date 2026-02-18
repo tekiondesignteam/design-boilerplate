@@ -10,10 +10,10 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en" suppressHydrationWarning>
             <head>
-                <link rel="stylesheet" href="/assets/css/colors.css" />
-                <link rel="stylesheet" href="/assets/css/typography.css" />
-                <link rel="stylesheet" href="/assets/css/icons.css" />
-                <link rel="stylesheet" href="/assets/css/tokens.css" />
+                <link rel="stylesheet" href="assets/css/colors.css" />
+                <link rel="stylesheet" href="assets/css/typography.css" />
+                <link rel="stylesheet" href="assets/css/icons.css" />
+                <link rel="stylesheet" href="assets/css/tokens.css" />
             </head>
             <body suppressHydrationWarning>
                 {children}

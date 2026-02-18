@@ -4,7 +4,7 @@ export default function Home() {
     const htmlContent = `
     <div style="padding: 24px 40px; background: white; border-bottom: 1px solid rgb(var(--border-primary)); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: var(--z-index-sticky); backdrop-filter: blur(8px); background: rgba(255, 255, 255, 0.8);">
       <h1 style="margin: 0; font-size: 20px; font-weight: var(--font-weight-bold); color: rgb(var(--text-primary));">Tekion - ARC Design System</h1>
-      <a href="/components/" style="color: rgb(var(--accent-text)); text-decoration: none; font-weight: var(--font-weight-semibold); font-size: 14px;">View All Components →</a>
+      <a href="components/" style="color: rgb(var(--accent-text)); text-decoration: none; font-weight: var(--font-weight-semibold); font-size: 14px;">View All Components →</a>
     </div>
     <div style="padding: 40px;">
     <h1 style="font-weight: var(--font-weight-bold);">Design Tokens</h1>
@@ -142,7 +142,7 @@ export default function Home() {
         <div class="token-card">
             <div class="swatch icon-light">
                 <span class="icon-svg"
-                    style="mask-image: url('/assets/icons/circle-outline.svg'); -webkit-mask-image: url('/assets/icons/circle-outline.svg'); width: 32px; height: 32px;"></span>
+                    style="mask-image: url('assets/icons/circle-outline.svg'); -webkit-mask-image: url('assets/icons/circle-outline.svg'); width: 32px; height: 32px;"></span>
             </div>
             <div class="info">
                 <div class="token-name">icon-light</div>
@@ -152,7 +152,7 @@ export default function Home() {
         <div class="token-card">
             <div class="swatch icon-dark">
                 <span class="icon-svg"
-                    style="mask-image: url('/assets/icons/circle-outline.svg'); -webkit-mask-image: url('/assets/icons/circle-outline.svg'); width: 32px; height: 32px;"></span>
+                    style="mask-image: url('assets/icons/circle-outline.svg'); -webkit-mask-image: url('assets/icons/circle-outline.svg'); width: 32px; height: 32px;"></span>
             </div>
             <div class="info">
                 <div class="token-name">icon-dark</div>
@@ -162,7 +162,7 @@ export default function Home() {
         <div class="token-card">
             <div class="swatch icon-disabled">
                 <span class="icon-svg"
-                    style="mask-image: url('/assets/icons/circle-outline.svg'); -webkit-mask-image: url('/assets/icons/circle-outline.svg'); width: 32px; height: 32px;"></span>
+                    style="mask-image: url('assets/icons/circle-outline.svg'); -webkit-mask-image: url('assets/icons/circle-outline.svg'); width: 32px; height: 32px;"></span>
             </div>
             <div class="info">
                 <div class="token-name">icon-disabled</div>
@@ -172,7 +172,7 @@ export default function Home() {
         <div class="token-card">
             <div class="swatch icon-on-color" style="background-color:#161616;">
                 <span class="icon-svg"
-                    style="mask-image: url('/assets/icons/circle-outline.svg'); -webkit-mask-image: url('/assets/icons/circle-outline.svg'); width: 32px; height: 32px;"></span>
+                    style="mask-image: url('assets/icons/circle-outline.svg'); -webkit-mask-image: url('assets/icons/circle-outline.svg'); width: 32px; height: 32px;"></span>
             </div>
             <div class="info">
                 <div class="token-name">icon-on-color</div>
@@ -182,7 +182,7 @@ export default function Home() {
         <div class="token-card">
             <div class="swatch icon-on-color-inverse" style="background-color:#EEE;">
                 <span class="icon-svg"
-                    style="mask-image: url('/assets/icons/circle-outline.svg'); -webkit-mask-image: url('/assets/icons/circle-outline.svg'); width: 32px; height: 32px;"></span>
+                    style="mask-image: url('assets/icons/circle-outline.svg'); -webkit-mask-image: url('assets/icons/circle-outline.svg'); width: 32px; height: 32px;"></span>
             </div>
             <div class="info">
                 <div class="token-name">icon-on-color-inverse</div>
@@ -192,7 +192,7 @@ export default function Home() {
         <div class="token-card">
             <div class="swatch icon-on-color-disabled" style="background-color:#161616;">
                 <span class="icon-svg"
-                    style="mask-image: url('/assets/icons/circle-outline.svg'); -webkit-mask-image: url('/assets/icons/circle-outline.svg'); width: 32px; height: 32px;"></span>
+                    style="mask-image: url('assets/icons/circle-outline.svg'); -webkit-mask-image: url('assets/icons/circle-outline.svg'); width: 32px; height: 32px;"></span>
             </div>
             <div class="info">
                 <div class="token-name">icon-on-color-disabled</div>

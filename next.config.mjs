@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
+    basePath: '/design-boilerplate',
     trailingSlash: true,
     images: {
         unoptimized: true,
