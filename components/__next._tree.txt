@@ -3,4 +3,4 @@
 :HL["/design-boilerplate/assets/css/typography.css","style"]
 :HL["/design-boilerplate/assets/css/icons.css","style"]
 :HL["/design-boilerplate/assets/css/tokens.css","style"]
-0:{"buildId":"MbC8H5_6MrrM_joXHxDOC","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"components","paramType":null,"paramKey":"components","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"viApf7i4bzbVqICcYff8c","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"components","paramType":null,"paramKey":"components","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
