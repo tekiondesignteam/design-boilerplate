@@ -1,5 +1,5 @@
-import { Agentation } from 'agentation';
 import './globals.css';
+import ClientAgentation from './components/ClientAgentation';
 
 export const metadata = {
     title: 'Design Tokens',
@@ -7,17 +7,19 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+    const basePath = process.env.NODE_ENV === 'production' ? '/design-boilerplate' : '';
+
     return (
         <html lang="en" suppressHydrationWarning>
             <head>
-                <link rel="stylesheet" href="/assets/css/colors.css" />
-                <link rel="stylesheet" href="/assets/css/typography.css" />
-                <link rel="stylesheet" href="/assets/css/icons.css" />
-                <link rel="stylesheet" href="/assets/css/tokens.css" />
+                <link rel="stylesheet" href={`${basePath}/assets/css/colors.css`} />
+                <link rel="stylesheet" href={`${basePath}/assets/css/typography.css`} />
+                <link rel="stylesheet" href={`${basePath}/assets/css/icons.css`} />
+                <link rel="stylesheet" href={`${basePath}/assets/css/tokens.css`} />
             </head>
             <body suppressHydrationWarning>
                 {children}
-                <Agentation />
+                <ClientAgentation />
             </body>
         </html>
     );
