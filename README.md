@@ -1,4 +1,5 @@
 # Tekion Design System Boilerplate
+date: 2026-02-19
 
 This project has been migrated from a collection of static HTML/CSS files to a **Next.js 16 (App Router)** application. It is configured for **Static Site Generation (SSG)** and is deployed to GitHub Pages.
 
