@@ -37,7 +37,7 @@ export default function ComponentsLayout({ children }) {
                     <Link href="/" style={{
                         textDecoration: 'none',
                         fontSize: '12px',
-                        fontWeight: 'var(--font-weight-semibold)',
+                        fontWeight: 'var(--font-weight-bold)',
                         color: 'rgb(var(--text-tertiary))',
                         textTransform: 'uppercase',
                         letterSpacing: '0.05em'

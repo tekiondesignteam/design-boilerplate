@@ -25,7 +25,7 @@ export default function SidebarNav({ components }) {
                                     color: isActive ? 'rgb(var(--accent-text))' : 'rgb(var(--text-secondary))',
                                     backgroundColor: isActive ? 'rgb(var(--accent-bg-light))' : 'transparent',
                                     fontSize: '14px',
-                                    fontWeight: 'var(--font-weight-semibold)',
+                                    fontWeight: 'var(--font-weight-bold)',
                                     transition: 'all 0.2s ease',
                                 }}
                                 className={`nav-link ${isActive ? 'active' : ''}`}

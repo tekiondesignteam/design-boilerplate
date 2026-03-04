@@ -97,9 +97,7 @@
 
     /* Semantic Weight Aliases */
     --font-weight-normal: var(--font-weight-3);
-    --font-weight-medium: var(--font-weight-4);
-    --font-weight-semibold: var(--font-weight-5);
-    --font-weight-bold: var(--font-weight-6);
+    --font-weight-bold: var(--font-weight-5);
 
     /* Typography - Line Heights (0-10) */
     --line-height-0: 1;
